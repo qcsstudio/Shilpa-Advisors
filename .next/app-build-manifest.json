@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "/(defaultLayout)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/page.js"
+    ],
+    "/(defaultLayout)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/layout.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/home2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/home2/page.js"
+    ],
+    "/home2/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/home2/layout.js"
+    ],
+    "/(defaultLayout)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/contact/page.js"
+    ],
+    "/(defaultLayout)/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/about/page.js"
+    ],
+    "/(defaultLayout)/service/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/service/page.js"
+    ],
+    "/(defaultLayout)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/blog/page.js"
+    ]
+  }
+}
