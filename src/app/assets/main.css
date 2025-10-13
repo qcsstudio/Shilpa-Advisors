@@ -127,6 +127,19 @@ h6 {
     font-size: 18px;
 }
 
+.hrms-container{
+    margin-top: 70px;
+}
+.scroll-smooth {
+  scroll-behavior:inherit;
+}
+.hover-bg-secondary:hover {
+  background-color: #e9ecef !important;
+}
+.transition-all {
+  transition: all 0.5s ease-in-out;
+}
+
 .align-items-center {
     -ms-flex-align: center!important;
     align-items: center!important;
@@ -273,6 +286,11 @@ ul {
     /* Firefox 18- */
 
     color: #454545;
+}
+
+/* hrms number color*/
+.hrmsnumber{
+    color: #F5D65F;
 }
 
 /* Contact Area */
@@ -1107,10 +1125,13 @@ img {
 .hero-content {
     animation: 3.1s running fadeInLeft;
     text-align: center;
-   
-   
 }
-
+.yellowarrow{
+    position: absolute;
+    top:100px;
+    
+  
+}
 .hero-content h4 {
     font-size: 16px;
     color: #ffde5d;
@@ -1128,17 +1149,6 @@ img {
     /* right: 4px; */
     /* left: -185px; */
 }
-/* 
-.hero-content h1 {
-    font-size: 80px;
-    line-height: 60px;
-    font-weight: 600;
-    padding-left: 0;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-} */
-
 .hero-content h2 {
     font-size: 100px;
     font-weight: 500;
@@ -1150,12 +1160,7 @@ img {
   .hero-content h2{
     font-size: 80px; /* change this to your desired size */
   }
-  .hero-content h2:before {
   
-    top: 0px;
-    left:100px;
-   
-}
 }
 
 .hero-all-images {
@@ -1183,8 +1188,8 @@ img {
     background-repeat: no-repeat;
     background-position: right;
     z-index: -1;
+    visibility: visible;
 }
-
 
 .hero-content p {
      font-size: 20px;
@@ -1479,6 +1484,10 @@ img {
     transition: .5s;
 }
 
+.feature-height{
+    height: 300px;
+}
+
 .feature-content h2 {
     font-size: 24px;
     font-weight: 500;
@@ -1604,8 +1613,10 @@ img {
 }
 
 .about-item-list ul li {
-    list-style: none;
-    padding: 5px 0 3px;
+   list-style: none;
+  display: flex;
+  align-items: start;
+  gap: 5px;
 }
 
 .about-item-list ul li i {
@@ -1948,7 +1959,14 @@ span.video-title {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 300px;
+}
+.single-service-box.upper4 {
+    background: url(/assets/images/resource/box-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .single-service-box.upper3 {
@@ -2537,6 +2555,7 @@ button.icons {
     border-radius: 25px;
     margin-top: 30px;
     transition: .5s;
+    height:362px
 }
 
 .testi-people {
@@ -2552,7 +2571,7 @@ button.icons {
 .testi-description p {
     padding: 45px 0 28px;
     margin-bottom: 27px;
-    border-bottom: 1px solid rgba(16,18,16,0.10196078431372549);
+    /* border-bottom: 1px solid rgba(16,18,16,0.10196078431372549); */
     font-size: 17px;
     color: #101210;
 }
@@ -3245,6 +3264,59 @@ ul.footer-menu li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     height: 662px;
+}
+.breatcam-section-button{
+    display: flex ;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    white-space: nowrap;
+   
+}
+.breatcam-section-button a{font-size: 16px;
+    padding: 12px 38px 15px;
+    background: #101210;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: start;
+    transition: .5s;
+    position: relative;
+}
+.breatcam-section-button a:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: #ffde5d;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.breatcam-section-button a i {
+    font-size: 26px;
+    position: relative;
+    top: 5px;
+    left: 2px;
+    transform: rotate(-52deg);
+    transition: .5s;
+    display: inline-block;
+    
+}
+
+.breatcam-section-button a:hover:before {
+    transform: scale(1);
+}
+.breatcam-section-button a:hover {
+    color: #101210;
+}
+.breatcam-section-button a:hover i{
+    color: #101210;
 }
 
 .style-two.breatcam-section {

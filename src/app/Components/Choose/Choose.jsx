@@ -51,6 +51,7 @@ const Choose = () => {
 
     return (
         <div className="why-choose-us style-two">
+			<h2>choose </h2>
 		<div className="container">
 			<div className="row">
 				<div className="col-lg-8">
