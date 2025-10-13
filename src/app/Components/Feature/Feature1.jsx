@@ -6,6 +6,9 @@ import data from '../../Data/feature1.json';
 import About1 from "../About/About1";
 import counter from '../../Data/counter.json';
 import Image from "next/image";
+import Fix from "../Fix/Fix";
+import Hrms from "../Hrms/Hrms";
+import hrmssteps from '../../Data/hrmssteps.json';
 
 const Feature1 = () => {
 
@@ -53,15 +56,33 @@ const Feature1 = () => {
                     title1="Authority Stack"
                     listItem={[
                         "Trusted by SMEs across manufacturing, garment, retail, banking, education, NGOs, & security services Standards supported: ISO 9001 · 45001 · 22000 · 14001 · 21001- 39001",
-                "Payroll localisation: EPF/ETF/APIT, variable OT types, bilingual payslips , Bank files",
-                "Tech & reliability: Cloud hosting, role-based access, audit trail, daily backups",
-                "Team: Seasoned consultants, auditors, facilitators & certified OBT partners"
-                        ]}
-                btnName="See our compliance stack"
-                btnUrl="/about"
-                    ></About1>
+                        "Payroll localisation: EPF/ETF/APIT, variable OT types, bilingual payslips , Bank files",
+                        "Tech & reliability: Cloud hosting, role-based access, audit trail, daily backups",
+                        "Team: Seasoned consultants, auditors, facilitators & certified OBT partners"
+                    ]}
+                    btnName="See our compliance stack"
+                    btnUrl="/about"
+                ></About1>
 
-            <div className="row counter-bg">
+                <Hrms
+                    data={hrmssteps}
+                    heading="Customisable HRMS (Your rules, not ours)"
+                    desc="Lead: One-size-fits-all HR rarely works. Our HRMS is fully customisable—we configure OT slabs, allowance/deduction formulas, multi-level approvals, payslip layouts , bank files, and reports to match your workflow."
+                />
+                <Fix
+                    mainimage="/assets/images/resource/about.png"
+                    title1="What You'll Fix in Week 1"
+                    listItem={[
+                        "TManual payroll chaos → Automated payroll with EPF/ETF/APIT; payslips go out on time",
+                        "Attendance disputes → Biometric logs + clear late/OT rules; fewer escalations",
+                        "Audit anxiety → Gap → documentation → internal audits → certification support",
+                        "Team friction → Practical training & OBT; better communication and ownership"
+                    ]}
+                    btnName="Show me how it works"
+                    btnUrl="/about" />
+
+
+                {/* <div className="row counter-bg">
                 {counter.map((item, i) => (
                     <div key={i} className="col-lg-3 col-md-6">
                         <div className="single-counter-box">
@@ -82,9 +103,9 @@ const Feature1 = () => {
                 <div className="dream-shape4">
                     <Image src="/assets/images/resource/shape-2.png" alt="img" width={46} height={46} />
                 </div>
+            </div> */}
             </div>
-        </div>
-            </div >
+        </div >
 
     );
 };

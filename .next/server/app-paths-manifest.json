@@ -1,1 +1,7 @@
-{}
+{
+  "/(defaultLayout)/service/page": "app/(defaultLayout)/service/page.js",
+  "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
+  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js",
+  "/(defaultLayout)/blog/blog-details/page": "app/(defaultLayout)/blog/blog-details/page.js",
+  "/(defaultLayout)/blog/page": "app/(defaultLayout)/blog/page.js"
+}

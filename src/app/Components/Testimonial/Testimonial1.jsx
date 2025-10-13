@@ -50,7 +50,8 @@ const Testimonial1 = () => {
 				<div className="col-lg-12">
 					<div className="dexon-section-title padding-lg text-center dreamit">
                         <SectionTitle
-                            Title="What Say Our Customers <br> About Dexon"
+                            Title="What Say Our Customers <br> About Shilpa Advisors"
+							
                             Content="Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
                         ></SectionTitle>
 					</div>
@@ -68,11 +69,11 @@ const Testimonial1 = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="testi-list owl-carousel cs_slider_gap_30">
+				<div className="testi-list owl-carousel cs_slider_gap_30 ">
                     <Slider {...settings}>
                     {data.map((item, index)=>(
-					<div key={index} className="col-lg-12">
-						<div className="testimonial-single-box">
+					<div key={index} className="col-lg-12 ">
+						<div className="testimonial-single-box ">
 							<div className="testi-people">
 							<Image src={item.image} alt="img" width={75} height={75}   />
 							</div>
@@ -80,13 +81,13 @@ const Testimonial1 = () => {
 								<h2> {item.title} </h2>
 								<span>{item.subTitle}</span>
 							</div>
-							<div className="testi-description">
+							<div className="testi-description ">
 								<p>“{item.desc}”</p>
 							</div>
-							<div className="company-logo">
+							<div className="company-logo ">
 								<a href="#"><Image src={item.icon} alt="img" width={75} height={25}   /></a>
 							</div>
-							<div className="company-rating">
+							<div className="company-rating ">
 								<ul>
 									<li><i className="bi bi-star-fill"></i></li>
 									<li><i className="bi bi-star-fill"></i></li>

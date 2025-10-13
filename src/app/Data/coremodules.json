@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Attendance & Biometrics",
+        "desc": "Integrate fingerprint/face devices or use web/CSV/Excel; process raw logs to registers. Auto rules: late, early-out, half-day, no-pay, OT windows/rounding/grace; exception queue & approvals.",
+        "desc2": "Employee-wise views; department/branch/worker-type registers.",
+        "cta": "Check my device compatibility"
+    },
+    {
+        "title": "Leave Management",
+        "desc": "Configurable leave types, accruals/proration, carry-forward/encashment, docs; multi-level approvals; blackout dates.",
+        "desc2": " Leave periods, holidays, late/short-leave caps. Real-time balances & histories with self-service.",
+        "cta": "Map my leave policy"
+    },
+    {
+        "title": "Payroll & Payslips",
+        "desc": "EPF/ETF/APIT, PAYE, stamp duty; recurring + one-time items; loans/advances/off-cycle.Bilingual payslips and bulk e-payslip delivery with secure templates/password rules.",
+        "desc2": "Bank files and GL exports.",
+        "cta": "See a month-end pack"
+    },
+    {
+        "title": "Reports & Statutory",
+        "desc": "Month-end: Pay Register, Pay Sheet, Salary Control, Control Sheet Variance, Reconciliation, Minus Salary, Loan, Bank Listing.",
+        "desc2": "EPF/ETF/Tax: C1, R1, R4; EPF/ETF half-year returns; APIT returns (T9, T10, T6).Bank/Contribution files: EPF/ETF contribution file creator.",
+        "cta": "Open statutory templates"
+    }
+]
