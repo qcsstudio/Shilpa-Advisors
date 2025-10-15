@@ -6,43 +6,34 @@ import Image from "next/image";
 
 const Project = () => {
     return (
-        <div className="project-section">
-			<h1>Project</h1>
+        <div className="">
 		<div className="container">
-			<div className="row">
-				<div className="col-lg-12">
-					<div className="dexon-section-title white text-center padding-lg project-title-area">
-						<SectionTitle
-                            Title="Already We have Finished Those <br> SEO Project"
-                            Content="Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
-                        ></SectionTitle>
-					</div>
-				</div>
-			</div>
+
+			<h2 className="text-center my-5 display-5 fw-semibold">Case Snapshots</h2>
 			<div className="row">
 
 				<ProjectCardStyle1
 					img="/assets/images/resource/pr1.jpg"
-					subTitle="Campaign"
-					title="SEO Consulting"
+					subTitle="HRMS | Retail, 1.2k:"
+					title="automated OT, manager approvals, month-end locked"
 				></ProjectCardStyle1>
 
 				<ProjectCardStyle2
 					img="/assets/images/resource/pr2.jpg"
-					subTitle="Campaign"
-					title="SEO Consulting"
+					subTitle="ISO | Manufacturing"
+					title="SOP pack + IAs; passed 9001 on first attempt"
 				></ProjectCardStyle2>
 
 				<ProjectCardStyle2
 					img="/assets/images/resource/pr3.jpg"
-					subTitle="Campaign"
-					title="SEO Consulting"
+					subTitle="Training | EdTech"
+					title="1-day leadership; NPS ↑; handover SLAs met"
 				></ProjectCardStyle2>
 
 				<ProjectCardStyle2
 					img="/assets/images/resource/pr4.jpg"
-					subTitle="Campaign"
-					title="SEO Consulting"
+					subTitle="Security | Events"
+					title=" guard SOPs + drills; incident time to close ↓"
 				></ProjectCardStyle2>
 
 				<div className="col-lg-4 col-md-6">
@@ -54,7 +45,7 @@ const Project = () => {
 									<Image src="/assets/images/resource/project-icon.png" alt="img" width={82} height={49}   />
 								</div>
 								<div className="dexon-button2 text-center">
-									<Link href="/contact">Contact Us <i className="bi-arrow-right-short"></i></Link>
+									<Link href="/contact">Open full case studies <i className="bi-arrow-right-short"></i></Link>
 								</div>
 							</div>
 						</div>

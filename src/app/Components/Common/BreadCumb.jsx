@@ -3,41 +3,48 @@ import { useEffect } from "react";
 import loadBackgroudImages from "./loadBackgroudImages";
 import parse from 'html-react-parser';
 import Image from "next/image";
+import Link from "next/link";
 
-const BreadCumb = ({bgImg,subTitle,title,content}) => {
-    
-    useEffect(() => {
-        loadBackgroudImages();
-      }, []);
+const BreadCumb = ({ bgImg, title, content, button1, button2 }) => {
 
-    return (
+  useEffect(() => {
+    loadBackgroudImages();
+  }, []);
 
-      <div className="breatcam-section d-flex align-items-center" data-background={bgImg}>
+  return (
+
+    <div className="breatcam-section d-flex align-items-center" data-background={bgImg}>
       <div className="container">
         <div className="row dream-bg align-items-center">
           <div className="col-lg-12">
             <div className="breatcam-content text-center">
-              <h4> <span> {subTitle} </span> </h4>
+              {/* <h4> <span> {subTitle} </span> </h4> */}
               <h1>{parse(title)}</h1>
               <p>{content}</p>
+            </div>
+            <div className="breatcam-section-button ">
+              <Link href="#"> {button1} <i className="bi bi-arrow-right-short"></i></Link>
+              {button2 &&
+                <Link href="#"> {button2} <i className="bi bi-arrow-right-short"></i></Link>
+              }
             </div>
           </div>
           <div className="inner-page-shape">
             <div className="inner-shape">
-             <Image src="/assets/images/resource/shape-2.png" alt="img" width={46} height={46}   />
+              <Image src="/assets/images/resource/shape-2.png" alt="img" width={46} height={46} />
             </div>
             <div className="inner-shape2">
-            <Image src="/assets/images/resource/shap-2.png" alt="img" width={40} height={40}   />
+              <Image src="/assets/images/resource/shap-2.png" alt="img" width={40} height={40} />
             </div>
             <div className="inner-shape3">
-            <Image src="/assets/images/resource/inner-shp.png" alt="img" width={287} height={249}   />
+              <Image src="/assets/images/resource/inner-shp.png" alt="img" width={287} height={249} />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    );
+  );
 };
 
 export default BreadCumb;

@@ -1,10 +1,11 @@
 import parse from 'html-react-parser';
 
-const SectionTitle = ({Title,Content=''}) => {
+const SectionTitle = ({Title,Content}) => {
     return (
-        <div>
-            <h1>{parse(Title)}</h1>
-            <p>{parse(Content)}</p>  
+        <div className='mt-5'>
+            <h1>{Title}</h1>
+            <p>{Content}</p>
+            {/* <p>(Add ConTent Here)</p> */}
         </div>
     );
 };
