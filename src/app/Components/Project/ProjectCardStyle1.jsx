@@ -10,7 +10,7 @@ const ProjectCardStyle1 = ({img,subTitle,title}) => {
                 <div className="project-content">
                     <h5>{subTitle}</h5>
                     <h2>{title}</h2>
-                    <Link href="/service"><i className="bi bi-arrow-right-short"></i></Link>
+                    {/* <Link href="/service"><i className="bi bi-arrow-right-short"></i></Link> */}
                 </div>
             </div>
         </div>

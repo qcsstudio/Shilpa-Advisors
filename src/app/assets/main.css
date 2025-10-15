@@ -1181,7 +1181,7 @@ img {
     position: absolute;
     content: "";
     top: -50px;
-    left:-350px;
+    left:-200px;
     width: 100%;
     height: 100%;
     background: url(/assets/images/slider/shap4.png);
@@ -1625,6 +1625,19 @@ img {
     padding-right: 5px;
 }
 
+.serviceCard-list ul li {
+   list-style: none;
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
+
+.serviceCard-list ul li i {
+    font-size: 20px;
+    color: #575857;
+    padding-right: 5px;
+}
+
 .dexon-button a {
     position: relative;
 }
@@ -1652,7 +1665,11 @@ img {
     padding: 8px 0 17px;
     margin: 28px 0 28px;
 }
-
+.counterCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 .row.about-bg2 .about-counter {
     display: flex;
     align-items: center;
@@ -1667,7 +1684,11 @@ img {
     margin-left: 15px;
     border-left: 1px solid rgba(16,18,16,0.2);
 }
+.counter-text-span{
+      margin-left:10px;
+     
 
+}
 /*About Counter*/
 
 .row.counter-bg {
@@ -1947,7 +1968,8 @@ span.video-title {
 }
 
 .single-service-box.upper {
-    background: url(/assets/images/resource/box-bg1.png);
+    /* background: url(/assets/images/resource/box-bg1.png); */
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1955,22 +1977,26 @@ span.video-title {
 }
 
 .single-service-box.upper2 {
-    background: url(/assets/images/resource/box-bg2.png);
+    /* background: url(/assets/images/resource/box-bg2.png); */
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 330px;
+    margin-top: 200px;
 }
 .single-service-box.upper4 {
-    background: url(/assets/images/resource/box-bg1.png);
+    /* background: url(/assets/images/resource/box-bg1.png); */
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 330px;
 }
 
 .single-service-box.upper3 {
-    background: url(/assets/images/resource/box-bg3.png);
+    /* background: url(/assets/images/resource/box-bg3.png); */
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1981,6 +2007,7 @@ h3.service-title {
     font-size: 26px;
     font-weight: 500;
     transition: .5s;
+    color: #000;
 }
 
 p.service-desc {
@@ -2065,7 +2092,6 @@ a.dexon-button i {
 .single-service-box2 h2.service-title {
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
     padding: 0 0 22px;
     line-height: 0;
 }
@@ -2086,6 +2112,11 @@ a.dexon-button i {
 
 .single-service-box2 .service-content {
     overflow: hidden;
+}
+.service-content-btn{
+    background-color: #000;
+    color: white;
+
 }
 
 .right-arrow a i {
@@ -2900,12 +2931,12 @@ p.team-text {
     text-align: center;
 }
 .project-content h5 {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 400;
 }
 
 .project-content h2 {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 500;
     padding: 3px 0 4px;
 }
@@ -3256,7 +3287,11 @@ ul.footer-menu li a:hover {
 <!-- ============================================================== -->
 <!-- dexon Breatcam Section Css -->
 <!-- ============================================================== -->*/
-
+@media (max-width: 768px) {
+  .security-realiabilty p {
+    width: 100% !important;
+  }
+}
 
 .breatcam-section {
     background: url(/assets/images/resource/inner-bg.jpg);

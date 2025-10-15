@@ -3,14 +3,10 @@ import { useEffect } from "react";
 import ServiceCard from "./ServiceCard";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Image from "next/image";
+import { homeservicecard1, homeservicecard2, homeservicecard3, homeservicecard4 } from "@/app/Data/homeservice";
 
-const Service1 = () => {
+const Service1 = ({headcontent}) => {
 
-	const HeadingContent = {
-		title1: 'Your rules, not ours',
-
-		Content: ' We configure OT slabs, night/weekend premiums, late/early/no-pay, slabbed allowances/deductions, single/parallel/multi-level approvals by department/site/grade, payslips, bank files and report layouts aligned to your auditor’s checklist.',
-	}
 
 	useEffect(() => {
 		loadBackgroudImages();
@@ -25,25 +21,22 @@ const Service1 = () => {
 						<div className="row">
 							<div className="col-lg-12">
 								<div className="dexon-section-title white padding-lg1">
-									<h1>{HeadingContent.title1}</h1>
-									<p>{HeadingContent.Content}</p>
+									<h1>{headcontent?.title1}</h1>
+									{headcontent?.Content && <p>{headcontent?.Content}</p>}
+
 								</div>
 							</div>
-							<div className="col-lg-12">
+							<div className="col-lg-12 ">
 								<div className="single-service-box upper2">
 									<ServiceCard
-										title="Rules & calculations"
-										content="OT windows/rounding/grace; no-pay; allowance/deduction formulas."
+										data={homeservicecard1}
 									></ServiceCard>
 								</div>
 							</div>
 							<div className="col-lg-12">
 								<div className="single-service-box upper4">
 									<ServiceCard
-										title="Interfaces"
-										content="Biometric devices; CSV/Excel ingest; bank files; GL mappings."
-										btnName="Read More"
-										btnUrl="/service/service-details"
+										data={homeservicecard2}
 									></ServiceCard>
 								</div>
 							</div>
@@ -54,8 +47,7 @@ const Service1 = () => {
 							<div className="col-lg-12">
 								<div className="single-service-box upper">
 									<ServiceCard
-										title="Workflows"
-										content="Approvals with routing/escalations; roster/shift assignment."
+										data={homeservicecard3}
 									></ServiceCard>
 								</div>
 							</div>
@@ -63,9 +55,7 @@ const Service1 = () => {
 							<div className="col-lg-12">
 								<div className="single-service-box upper3">
 									<ServiceCard
-										title="Outputs"
-										content="payslips, month-end packs, statutory bundles; scheduled emails.
- 													Action row: Book Free Fit-Assessment · Ask about your bank/device · See a Month-End Pack"
+										data={homeservicecard4}
 									></ServiceCard>
 								</div>
 							</div>

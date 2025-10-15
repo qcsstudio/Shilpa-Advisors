@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Rules & calculations",
+        "desc":"OT windows/rounding/grace,no-pay,allowance/deduction formulas."
+    },
+    {
+        "title":"Workflows",
+        "desc":"approvals with routing/escalations; roster/shift assignment."
+    },
+    {
+        "title":"Interfaces",
+        "desc":"biometric devices; CSV/Excel ingest; bank files; GL mappings."
+    },
+    {
+        "title":"Outputs",
+        "desc":"payslips, month-end packs, statutory bundles; scheduled emails."
+    }
+    
+
+]
