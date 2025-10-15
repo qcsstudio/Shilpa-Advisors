@@ -5,7 +5,7 @@ import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Link from "next/link";
 import Image from "next/image";
 
-const Cta = ({ title, buttons = {},sideicon }) => {
+const Cta = ({ title,content, buttons = {},sideicon }) => {
 
 	const CallContent = {
 		icon: '/assets/images/resource/call.png',
@@ -26,12 +26,12 @@ const Cta = ({ title, buttons = {},sideicon }) => {
 						<div className="dexon-section-title white">
 							<SectionTitle
 								Title={title}
+								Content={content}
 							></SectionTitle>
 						</div>
 						<div className="dexon-button">
 							<div
-								className={`d-flex gap-4 mt-4 flex-wrap ${buttons.btn2 ? "justify-content-start" : "justify-content-center"
-									}`}
+								className={`d-flex gap-4 mt-4 flex-wrap justify-content-start `}
 							>
 								{/* Button 1 */}
 								{buttons.btn1?.label && (

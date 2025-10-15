@@ -1,16 +1,16 @@
 
 const CounterCard = ({number,content}) => {
     return (
-        <div className="col-lg-6 col-md-6">
-        <div className="about-counter">
+        <div className="col-lg-3 col-md-6 counterCard ">
+        <div className="about-counter ">
             <div className="counter-title">
-                <h1 className="counter">{number}</h1>
-                <h1>%</h1>
-            </div>
-            <div className="counter-text">
-                <span>{content}</span>
+                <h1 className="counter">{number}%</h1>
+                
             </div>
         </div>
+            <div className="counter-text-span  ">
+                <span>{content}</span>
+            </div>
     </div>
     );
 };

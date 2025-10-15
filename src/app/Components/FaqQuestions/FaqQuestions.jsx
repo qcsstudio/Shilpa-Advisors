@@ -3,10 +3,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import scenarios from '../../Data/scenarios.json'
 
 
-const Questions = ({ FaqData }) => {
+
+const Questions = ({ faqData }) => {
 
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -15,30 +15,14 @@ const Questions = ({ FaqData }) => {
     };
 
     return (
-        <div className="about-section style-three py-0" data-background="/assets/images/resource/about-bg3.jpg">
+        <div className="about-section style-three py-3 " data-background="/assets/images/resource/about-bg3.jpg">
+            <h2 className="text-center fw-semibold display-5 mb-5">
+                Frequently Asked Question's
+            </h2>
+
             <div className="container"  >
-                
-                {/* ---REAL-WORLD SCENARIOS-------- */}
-                
-                <div className="row ">
-                    <h2 className='my-5'>REAL-WORLD SCENARIOS</h2>
-                    {scenarios.map((item, i) => (
-                        <div key={i} className="col-lg-3 col-md-3 ">
-                            <div className="feature-single-box feature-height">
-                                <div className="feature-content">
-                                    <h2>{item.title}</h2>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
 
                 {/*--------------- Questions --------------*/}
-
-                <h2 className="text-center fw-semibold display-5 mb-5">
-                    Frequently Asked Question's
-                </h2>
 
                 <div className="row align-items-center">
 
@@ -48,7 +32,7 @@ const Questions = ({ FaqData }) => {
                         className="col-lg-12 overflow-auto "
 
                     >
-                        {FaqData?.map((item, index) => (
+                        {faqData?.map((item, index) => (
                             <div
                                 key={index}
                                 className="bg-light border rounded p-3 mb-3"

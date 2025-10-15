@@ -7,6 +7,8 @@ import loadBackgroudImages from '../Common/loadBackgroudImages';
 import Link from 'next/link';
 import Image from 'next/image';
 import About1 from './About1';
+import customhrms from '../../Data/customhrms.json'
+
 
 const About4 = () => {
 
@@ -72,7 +74,7 @@ const About4 = () => {
 
 					<div className="row ">
 						{data2.map((item, i) => (
-							<div key={i} className="col-lg-6 col-md-6 ">
+							<div key={i} className="col-lg-6 col-md-12 ">
 								<div className="feature-single-box">
 									<div className="feature-content">
 										<h2>{item.title}</h2>
@@ -88,6 +90,22 @@ const About4 = () => {
 							</div>
 						))}
 					</div>
+							{/*---------- Customisable Hrms ----------------*/}
+					  <div className="row ">
+										<h2 className='my-5'>CUSTOMISABLE HRMS</h2>
+										{customhrms.map((item, i) => (
+											<div key={i} className="col-lg-3 col-md-6 ">
+												<div className="feature-single-box feature-height">
+													<div className="feature-content">
+														<h2 >{item.title}</h2>
+														<p>{item.desc}</p>
+													</div>
+												</div>
+											</div>
+										))}
+									</div>
+
+				
 			</div>
 			</div>
 

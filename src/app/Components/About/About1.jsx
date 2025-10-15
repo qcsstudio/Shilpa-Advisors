@@ -12,7 +12,7 @@ const About1 = ({mainimage,title1,listItem,btnName,btnUrl}) => {
         </div>
         <div className="col-lg-6">
             <div className="dexon-section-title">
-                <h1>{title1}</h1>
+                <h2>{title1}</h2>
                 
             </div>
             <div className="about-item-list">
