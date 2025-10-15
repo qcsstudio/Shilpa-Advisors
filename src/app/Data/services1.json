@@ -1,17 +1,22 @@
 [
   {
     "icon": "/assets/images/resource/icon1.png",
-    "title": "Keyword Research",
-    "desc": "Allamcorper risus ultrices risus lorem vibero in pellentesque potenti more"
+    "title": "Fit Call",
+    "desc": "goals, scope, constraints (HRMS/ISO/Training/Security)"
   },
   {
     "icon": "/assets/images/resource/icon2.png",
-    "title": "Customer Campaign",
-    "desc": "Allamcorper risus ultrices risus lorem vibero in pellentesque potenti more"
+    "title": "Roadmap",
+    "desc": "timelines, roles, deliverables per service stream"
   },
   {
     "icon": "/assets/images/resource/icon3.png",
-    "title": "Social Boost",
-    "desc": "Allamcorper risus ultrices risus lorem vibero in pellentesque potenti more"
+    "title": "Execution",
+    "desc": "HRMS configs; ISO docs & IAs; training; security SOPs"
+  },
+  {
+    "icon": "/assets/images/resource/icon3.png",
+    "title": "Quarterly Improvement",
+    "desc": "KPIs, reports, refreshers, surveillance"
   }
 ]

@@ -1,30 +1,23 @@
 [
   {
     "image": "/assets/images/resource/testi.png",
-    "subTitle": "Marketer",
+    "subTitle": "CFO, Colombo SME",
     "title": "Sonia Sara",
-    "desc": "Distinctively formulate optimal outsid for interdependent schemas to evolve end action items and fully researched vortals niche markets rather than proof processes",
+    "desc": "Payroll prep went from two days to two hours. EPF/ETF rejections? Zero last quarter.” ",
     "icon": "/assets/images/resource/cmp-logo2.png"
   },
   {
     "image": "/assets/images/resource/testi2.png",
-    "subTitle": "Researcher",
+    "subTitle": "Director, Services SME",
     "title": "John Alexon",
-    "desc": "Distinctively formulate optimal outsid for interdependent schemas to evolve end action items and fully researched vortals niche markets rather than proof processes",
+    "desc": "They took us from gap to ISO 9001 without chaos. Documentation and audits were crystal-clear.",
     "icon": "/assets/images/resource/cmp-logo.png"
   },
   {
     "image": "/assets/images/resource/testi3.png",
-    "subTitle": "Marketer",
+    "subTitle": "HR Lead, Retail SME",
     "title": "D. Morgan",
-    "desc": "Distinctively formulate optimal outsid for interdependent schemas to evolve end action items and fully researched vortals niche markets rather than proof processes",
+    "desc": "OBT at Kitulgala changed our supervisors—communication and ownership jumped.",
     "icon": "/assets/images/resource/cmp-logo.png"
-  },
-  {
-    "image": "/assets/images/resource/testi2.png",
-    "subTitle": "Researcher",
-    "title": "John Alexon",
-    "desc": "Distinctively formulate optimal outsid for interdependent schemas to evolve end action items and fully researched vortals niche markets rather than proof processes",
-    "icon": "/assets/images/resource/cmp-logo.png"
-  } 
+  }
 ]
