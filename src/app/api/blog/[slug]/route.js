@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import Blog from '@/models/blogs';
-import connectMongo from '@/lib/mongodb';
+import Blog from '@/app/models/blogs';
+import connectMongo from '@/app/lib/mongodb';
 
 export async function GET(req,{ params }) {
   const { slug } =   params;

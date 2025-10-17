@@ -1,4 +1,4 @@
-// File: D:\shilpa-advisor\src\app\(defaultLayout)\servicepage\page.jsx
+// File: D:\Shilpa-Advisors\src\app\(defaultLayout)\servicepage\page.jsx
 import * as entry from '../../../../../src/app/(defaultLayout)/servicepage/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

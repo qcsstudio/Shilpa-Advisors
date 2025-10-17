@@ -1,4 +1,4 @@
-// File: D:\shilpa-advisor\src\app\(defaultLayout)\layout.jsx
+// File: D:\Shilpa-Advisors\src\app\(defaultLayout)\layout.jsx
 import * as entry from '../../../../src/app/(defaultLayout)/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
