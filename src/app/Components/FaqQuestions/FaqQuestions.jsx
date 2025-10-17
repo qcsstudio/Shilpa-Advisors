@@ -35,11 +35,11 @@ const Questions = ({ faqData }) => {
                         {faqData?.map((item, index) => (
                             <div
                                 key={index}
-                                className="bg-light border rounded p-3 mb-3"
+                                className="bg-white  rounded p-3 mb-3 "
                                 onClick={() => toggleAnswer(index)}
                                 style={{ cursor: "pointer" }}
                             >
-                                <div className="d-flex justify-content-between align-items-center py-1">
+                                <div className="d-flex justify-content-between align-items-center py-1 ">
                                     <span className="fw-medium text-dark">{item.question}</span>
                                     <button
                                         type="button"

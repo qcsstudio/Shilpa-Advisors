@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import About1 from "../About/About1";
+import Acheive from "../About/Acheive";
 import Fix from "../Fix/Fix";
 
 
@@ -17,7 +17,7 @@ const Feature1 = () => {
         <div className="feature-section" data-background="/assets/images/resource/feature-bg.jpg">
            
             <div className="container">
-                <About1
+                <Acheive
                     mainimage="/assets/images/resource/about.png"
                     title1=" Built for global scale, local rules"
                     listItem={[
@@ -28,7 +28,7 @@ const Feature1 = () => {
                     ]}
                     btnName="See our compliance stack"
                     btnUrl="/about"
-                ></About1>
+                />
 
                
                 <Fix

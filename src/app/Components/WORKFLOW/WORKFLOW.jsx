@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 
-const Hrms = ({data,heading,desc}) => {
+const WORKFLOW  = ({data,heading,desc}) => {
   const [activeStep, setActiveStep] = useState(1);
   const [visibleSteps, setVisibleSteps] = useState(new Set());
   const [isMobile, setIsMobile] = useState(false);
@@ -65,7 +65,7 @@ const Hrms = ({data,heading,desc}) => {
               : "overflow-visible"
           }`}
         >
-          {data.map((step, index) => {
+          {data?.map((step, index) => {
             const isActive = activeStep === step.number;
             const isVisible = visibleSteps.has(step.number);
 
@@ -136,4 +136,4 @@ const Hrms = ({data,heading,desc}) => {
   );
 };
 
-export default Hrms;
+export default WORKFLOW;

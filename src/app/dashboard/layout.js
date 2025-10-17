@@ -1,5 +1,4 @@
-import AdminNav from "@/components/AdminNavbarComponent/AdminNav";
-import Sidebar from "@/components/SidebarComponents/Sidebar";
+import Sidebar from "../Components/SidebarComponents/Sidebar";
 
 
 export default function Layout({ children }) {
