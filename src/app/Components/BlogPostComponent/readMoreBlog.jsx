@@ -150,9 +150,9 @@ export default function ReadMoreBlog() {
           <h2 className={`text-[26px] font-bold mb-4 font-unbounded`}>Recent Post&#39;s</h2>
           <div className="space-y-4">
             {loading
-              ? Array(5).fill(null).map((_, i) => <SkeletonRecentPost key={i} />)
+              ? Array(5).fill(null)?.map((_, i) => <SkeletonRecentPost key={i} />)
               : blogs
-                .slice()
+                ?.slice()
                 .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
                 .slice(0, 5)
                 .map((recentBlog, index) => (
@@ -187,10 +187,10 @@ export default function ReadMoreBlog() {
         <h3 className={`text-center text-4xl my-5 font-medium font-unbounded`}>More Blogs</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
           {loading
-            ? Array(3).fill(null).map((_, i) => <SkeletonCard key={i} />)
+            ? Array(3).fill(null)?.map((_, i) => <SkeletonCard key={i} />)
             : currentBlogs.length === 0
               ? <p className="text-center text-gray-600 col-span-full">No blogs found.</p>
-              : currentBlogs.map((blog, i) => (
+              : currentBlogs?.map((blog, i) => (
                 <div key={i} className="bg-[#F5F7F9] rounded-lg p-3 shadow hover:shadow-lg transition-shadow duration-300">
                   <Image
                     src={blog.thumbnail}
@@ -225,7 +225,7 @@ export default function ReadMoreBlog() {
             <FaChevronLeft />
           </button>
 
-          {getPageNumbers(totalPages, currentPage).map((page, index) =>
+          {getPageNumbers(totalPages, currentPage)?.map((page, index) =>
             page === '...'
               ? <span key={index} className="px-3 py-1 rounded border text-gray-500">...</span>
               : <button

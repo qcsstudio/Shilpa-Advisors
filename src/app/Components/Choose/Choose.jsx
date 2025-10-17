@@ -95,7 +95,7 @@ const Choose = () => {
 			<div className="row brand-bg">
 				<div className="brand-list owl-carousel">
                 <Slider {...settings}>
-                    {brand.map((item, index)=>(
+                    {brand?.map((item, index)=>(
 					<div key={index} className="col-lg-12">
 						<div className="brand-thumb">
 						<Image src={item.img} alt="img" width={127} height={24}   />

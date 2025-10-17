@@ -28,7 +28,7 @@ const Feature2 = ({data}) => {
 				</div>
 			</div>
 			<div className="row justify-content-center">
-            {data.map((item, i) => (
+            {data?.map((item, i) => (
 				<div key={i} className="col-lg-4 col-md-6">
 					<div className="feature-single-box">
 						{/* <div className="feature-icon">
@@ -38,7 +38,7 @@ const Feature2 = ({data}) => {
 							<h2 className=''>{item.heading}</h2>
 							<p>{item.time} </p>
 							<ul>
-								{item.list.map((list,idx)=>(
+								{item.list?.map((list,idx)=>(
 									<li key={idx}>{list}</li>
 								))}
 							</ul>

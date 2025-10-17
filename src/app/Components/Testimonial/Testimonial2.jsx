@@ -73,7 +73,7 @@ const Testimonial2 = () => {
 			<div className="row">
 				<div className="testi-list2 owl-carousel cs_slider_gap_30">
                     <Slider {...settings}>
-                    {data.map((item, index)=>(
+                    {data?.map((item, index)=>(
 					<div key={index} className="col-lg-12">
 						<div className="testimonial-single-box">
 							<div className="testi-people">

@@ -25,7 +25,7 @@ const Feature3 = () => {
 				</div>
 			</div>
 			<div className="row">
-            {data.map((item, i) => (
+            {data?.map((item, i) => (
 				<div key={i} className="col-lg-4 col-md-6">
 					<div className="single-choose-us-box">
 						<div className="choose-icon">

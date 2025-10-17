@@ -80,7 +80,7 @@ const Sidebar = () => {
 
         {/* Menu */}
         <nav className="nav flex-column mt-2 text-danger">
-          {filteredMenuItems.map((item) => {
+          {filteredMenuItems?.map((item) => {
             const Icon = item.icon;
             const isActive = activeItem === item.name.toLowerCase();
             return (

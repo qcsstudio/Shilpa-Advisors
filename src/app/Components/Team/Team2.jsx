@@ -6,7 +6,7 @@ const Team2 = () => {
         <div className="team-section style-two">
 		<div className="container">
 			<div className="row">
-            {data.map((item, i) => (
+            {data?.map((item, i) => (
 				<div key={i} className="col-lg-4 col-md-6">
 					<div className="single-team-box">
 						<div className="team-thumb">
