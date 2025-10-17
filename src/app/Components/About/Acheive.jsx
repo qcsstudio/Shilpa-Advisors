@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Acheive = ({mainimage,title1,listItem,btnName,btnUrl}) => {
     return (
-        <div className="row about-bg align-items-center">
+        <div className="row about-bg align-items-center ">
         
         <div className="col-lg-6">
             <div className="about-thumb">
