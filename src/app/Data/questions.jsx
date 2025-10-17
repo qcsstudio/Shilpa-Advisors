@@ -41,6 +41,49 @@ export const service_Faq = [
     }
 ]
 
+export const service_Faq2 = [
+    {
+        question:"How long does ISO 9001/45001/22000 take for an SME?",
+        answer:"Typical projects reach certification in 12–20 weeks, depending on the scope, number of sites, team bandwidth and your commitment."
+    },
+    {
+        question:"Will you write our SOPs and forms?",
+        answer:"Yes—we map your real process, then deliver editable SOPs, forms, and registers that staff can actually follow."
+    },
+    {
+        question:"Do you train internal auditors?",
+        answer:" Yes—IA training + supervised audits with ready-to-use checklists and NC/CAPA tracking"
+    },
+    {
+        question:"Can you help choose a Certification Body (CB)?",
+        answer:" Absolutely—we shortlist CBs, compare scope/fees, and align your evidence to their expectations."
+    },
+    {
+        question:"What happens if we get nonconformities?",
+        answer:" We drive root cause → CAPA and re-verify closure; you keep logs for surveillance."
+    },
+    {
+        question:"Do you support HACCP/GMP with ISO 22000?",
+        answer:" Yes—hazard analysis, PRPs/OPRPs, traceability & recall simulations, monitoring records."
+    },
+    {
+        question:"How do you handle multi-site operations?",
+        answer:" Central documentation + site-specific annexes; internal audits rotated by site; sample plans for CB Stage 2."
+    },
+    {
+        question:"We already have documents—can you reuse them?",
+        answer:"Yes—we rationalise & gap-fill your current documents to avoid reinventing the wheel."
+    },
+    {
+        question:"What happens after certification?",
+        answer:" We set the surveillance calendar, update risk/KPIs, and run quarterly improvement huddles to provide ongoing support."
+    },
+    {
+        question:"What does it cost?",
+        answer:"After a Readiness Call, you’ll receive a clear proposal based on standard(s), sites, headcount, and support level."
+    }
+]
+
 export const home_Faq = [
     {
         question:"Can the platform handle multi-country payroll and currencies?",

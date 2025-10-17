@@ -1,17 +1,26 @@
-import About4 from '@/app/Components/About/About4';
 import BreadCumb from '@/app/Components/Common/BreadCumb';
-import Hrms from '@/app/Components/Hrms/Hrms';
 import React from 'react';
 import overflow from '@/app/Data/overflow.json'
 import Questions from '@/app/Components/FaqQuestions/FaqQuestions';
 import Cta from '@/app/Components/Cta/Cta';
 import { service_Faq } from '@/app/Data/questions';
-import scenarios from '../../Data/scenarios.json'
-import Link from 'next/link';
+import { service1 } from '@/app/Data/service/service1';
+import WORKFLOW from '@/app/Components/WORKFLOW/WORKFLOW';
+import Scenerios from '@/app/Components/Services/Scenerios';
+import Reliability from '@/app/Components/Services/Reliability';
+import Problem from '@/app/Components/Services/Problem';
+import Acheive from '@/app/Components/About/Acheive';
+import CoreModules from '@/app/Components/Services/CoreModules';
+import Hrms from '@/app/Components/Services/Hrms';
 
 
 const page = () => {
-
+    const about1listItem = [
+        "Payroll in minutes with EPF/ETF/APIT and stamp duty auto-calculated.",
+        "Fewer disputes via biometric logs + late/OT/half-day/no-pay rules and approvals.",
+        "Audit-ready month-end with reconciliation, statutory bundles and period locking.",
+        "Buyer confidence and faster vendor onboarding"
+    ]
     return (
         <div>
             <BreadCumb
@@ -22,8 +31,21 @@ const page = () => {
                 button1="Get a Live Demo"
                 button2="Book Free Fit-Assessment"
             />
-            <About4/>
-            <Hrms data={overflow} heading="GUIDED WORKFLOW" />
+            <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
+                <div className="container">
+                    <Problem data={service1} />
+                    <Acheive
+                        mainimage="/assets/images/resource/about.png"
+                        title1="WHAT YOU'LL ACHIEVE"
+                        listItem={about1listItem}
+                        btnName="Download the Sri Lanka Payroll Checklist (PDF)"
+                        btnUrl="/about"
+                    />
+                    <CoreModules />
+                    <Hrms />
+                </div>
+            </div>
+            <WORKFLOW data={overflow} heading="GUIDED WORKFLOW" />
             <Cta
                 title="IMPLEMENTATION & CHANGE MANAGEMENT"
                 content="Fit-Assessment → Prototype (1–2 weeks) with sample data → UAT & sign-off → Migration (masters, YTD, balances, history) → Go-Live (optional parallel run; period lock) → Post-Go (30–60–90 day tune-ups; L1/L2/L3 under SLA)."
@@ -31,36 +53,8 @@ const page = () => {
                 sideicon={false}
             />
             <div className="about-section style-three py-0 pb-5" data-background="/assets/images/resource/about-bg3.jpg">
-                <div className="container"  >
-
-                    {/* ---REAL-WORLD SCENARIOS-------- */}
-
-                    <div className="row ">
-                        <h2 className='my-5'>REAL-WORLD SCENARIOS</h2>
-
-                        {scenarios.map((item, i) => (
-                            <div key={i} className="col-lg-3 col-md-6 ">
-                                <div className="feature-single-box feature-height">
-                                    <div className="feature-content">
-                                        <h2>{item.title}</h2>
-                                        <p>{item.desc}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        {/*----------- SECURITY & RELIABILITY--------------- */}
-
-                        <div className='col-lg-12  rounded-5 bg-white px-5 py-4 security-realiabilty'>
-                            <h2>SECURITY & RELIABILITY</h2>
-                            <p className='mt-4 w-50 '>RBAC with audit trails; encryption in transit/at rest; daily backups; optional IP restrictions & 2FA; Huawei Cloud hosting with mirrored storage & recovery runbooks.</p>
-                            <div className='breatcam-section-button d-flex justify-content-start'>
-                                <Link href="#">Read client stories<i className="bi bi-arrow-right-short"></i></Link>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                <Scenerios />
+                <Reliability />
             </div>
             <Questions faqData={service_Faq} />
             <Cta

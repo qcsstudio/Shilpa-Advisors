@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from 'react';
-import data from '../../Data/feature3.json';
+import data from '../../Data/whysme.json';
 import SectionTitle from '../Common/SectionTitle';
 import loadBackgroudImages from '../Common/loadBackgroudImages';
 import Image from 'next/image';
@@ -18,8 +18,8 @@ const Feature3 = () => {
 				<div className="col-lg-12">
 					<div className="dexon-section-title text-center white padding-lg about-chosse-content">
                         <SectionTitle
-                            Title="What the Benefits You will <br> Get From Dexon"
-                            Content="Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
+                            Title="Why SMEs pick us"
+                            
                         ></SectionTitle>
 					</div>
 				</div>
