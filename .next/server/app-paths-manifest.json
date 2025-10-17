@@ -1,5 +1,4 @@
 {
   "/api/blog/route": "app/api/blog/route.js",
-  "/(defaultLayout)/servicepage/page": "app/(defaultLayout)/servicepage/page.js",
-  "/(defaultLayout)/blog/page": "app/(defaultLayout)/blog/page.js"
+  "/(defaultLayout)/service/page": "app/(defaultLayout)/service/page.js"
 }
