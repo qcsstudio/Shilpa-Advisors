@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
       <body className={`${kumbh_sans.variable} ${clashdisplay.variable}`}>
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMS2R6PR"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            height="0" width="0"  style={{ display: "none", visibility: "hidden" }}></iframe>
         </noscript>
         {children}
         <CalendlyBadge />
