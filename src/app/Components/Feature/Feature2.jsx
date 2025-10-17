@@ -19,8 +19,8 @@ const Feature2 = () => {
 				<div className="col-lg-12">
 					<div className="dexon-section-title white padding-lg text-center">
                         <SectionTitle
-                            Title="What are the Gains you Receive <br> Every SEO Campaign?"
-                            Content="Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
+                            Title="The Shilpa Method"
+                            // Content="Distinctively supply exceptional services after uniquely integrate alternative markets rather emerging initiatives."
                         ></SectionTitle>
 					</div>
 				</div>
