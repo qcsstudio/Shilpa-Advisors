@@ -5,6 +5,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "slick-carousel/slick/slick.css";
 import "./assets/main.css";
 import './assets/responsive.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';  // theme
+import 'primereact/resources/primereact.min.css';                  // core css
+import 'primeicons/primeicons.css';                                // icons
+import CalendlyBadge from "./Components/CalendlyBadge/CalendlyBadge";
 
 const kumbh_sans = Kumbh_Sans({
   subsets: ['latin'],
@@ -46,6 +50,17 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NMS2R6PR');
           `}
         </script>
+           <script
+          id="microsoft-clarity"
+          strategy="afterInteractive" // load after page is interactive
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "tqepv622yu");`
+          }}
+        />
       </head>
       <body className={`${kumbh_sans.variable} ${clashdisplay.variable}`}>
         <noscript>
@@ -53,6 +68,7 @@ export default function RootLayout({ children }) {
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
         {children}
+        <CalendlyBadge />
       </body>
     </html>
   );

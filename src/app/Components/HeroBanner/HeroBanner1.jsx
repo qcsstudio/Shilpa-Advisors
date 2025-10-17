@@ -4,7 +4,7 @@ import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Link from "next/link";
 import Image from "next/image";
 
-const HeroBanner1 = ({ bgmage, Title1, Title2, content, btnName, btnUrl, heroShape1, heroShape2, buttons }) => {
+const HeroBanner1 = ({ bgmage, Title1, Title2, content, btnName, btnUrl, heroShape1, heroShape2, buttons,action }) => {
 
 	useEffect(() => {
 		loadBackgroudImages();
@@ -14,7 +14,7 @@ const HeroBanner1 = ({ bgmage, Title1, Title2, content, btnName, btnUrl, heroSha
 		<div className="hero-section d-flex align-items-center" data-background={bgmage}>
 
 			<div className="container-fluid">
-				<div className="row hero-bg">
+				<div className="row hero-bg ">
 					<div className="col-lg-12 mx-2 mx-lg-5">
 						<div className="hero-content d-flex gap-2 ">
 							<div className="col-lg-9 ">
@@ -36,19 +36,21 @@ const HeroBanner1 = ({ bgmage, Title1, Title2, content, btnName, btnUrl, heroSha
 										>
 											{/* Button 1 */}
 											{buttons.btn1?.label && (
-												<Link
-													href={buttons.btn1.link || "#"}
-
+												<button
+													onClick={buttons.btn1?.link || "#"}
+												className="rounded-2 bg-black text-white px-5"
 												>
 													{buttons.btn1.label}
 													<i className="bi bi-arrow-right-short ms-2"></i>
-												</Link>
+												</button>
 											)}
 
 											{/* Button 2 */}
 											{buttons.btn2?.label && (
 												<Link
 													href={buttons.btn2.link || "#"}
+													target="_blank"
+													rel="noopener noreferrer"
 
 												>
 													{buttons.btn2.label}

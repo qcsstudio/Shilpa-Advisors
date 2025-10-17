@@ -15,9 +15,9 @@ const HomeResources = () => {
     <div className="row  justify-content-center bg-dark rounded-5 py-5 text-center">
       {/* <!-- HRMS --> */}
       <div className="col-md-12 col-lg-3">
-        <div className="p-4 h-100 k border-end border-secondary">
-          <p className="mb-3">
-            <strong>HRMS:</strong> Global Payroll Readiness Checklist — PDF
+        <div className="resource-card p-4 h-100 k border-end border-secondary">
+          <p className="mb-3 lh-lg">
+            <strong>HRMS:</strong><br /> Global Payroll Readiness <br/> Checklist
           </p>
           {/* <a href="#" className="text-success text-decoration-none fw-semibold">
             Learn more <i className="bi bi-arrow-up-right ms-1"></i>
@@ -27,9 +27,9 @@ const HomeResources = () => {
 
       {/* <!-- ISO --> */}
       <div className="col-md-12 col-lg-3">
-        <div className="p-4 h-100 bg-dark border-end border-secondary">
-          <p className="mb-3">
-            <strong>ISO:</strong> ISO 9001 Internal Audit Plan — Google Sheet
+        <div className="resource-card p-4 h-100 bg-dark border-end border-secondary">
+          <p className="mb-3 lh-lg">
+            <strong>ISO:</strong> <br /> ISO 9001 Internal <br/>Audit Plan
           </p>
           {/* <a href="#" className="text-success text-decoration-none fw-semibold">
             Learn more <i className="bi bi-arrow-up-right ms-1"></i>
@@ -39,9 +39,9 @@ const HomeResources = () => {
 
       {/* <!-- Training --> */}
       <div className="col-md-12 col-lg-3">
-        <div className="p-4 h-100 bg-dark border-end border-secondary">
-          <p className="mb-3">
-            <strong>Training:</strong> TNA (Training Needs Analysis) Template — XLS
+        <div className="resource-card p-4 h-100 bg-dark border-end border-secondary">
+          <p className="mb-3 lh-lg">
+            <strong>Training:</strong> <br />TNA (Training Needs Analysis) Template 
           </p>
           {/* <a href="#" className="text-success text-decoration-none fw-semibold">
             Learn more <i className="bi bi-arrow-up-right ms-1"></i>
@@ -51,9 +51,9 @@ const HomeResources = () => {
 
       {/* <!-- Security --> */}
       <div className="col-md-12 col-lg-3">
-        <div className="p-4 h-100 bg-dark">
-          <p className="mb-3">
-            <strong>Security:</strong> Security SOP Starter Kit — DOC
+        <div className="resource-card p-4 h-100 bg-dark">
+          <p className="mb-3 lh-lg">
+            <strong>Security:</strong> <br />Security SOP Starter<br/> Kit 
           </p>
           {/* <a href="#" className="text-success text-decoration-none fw-semibold">
             Learn more <i className="bi bi-arrow-up-right ms-1"></i>
@@ -62,12 +62,6 @@ const HomeResources = () => {
       </div>
     </div>
 
-    {/* <!-- CTA --> */}
-    <div className="text-center mt-5">
-      <a href="#" className="btn btn-success px-4 py-2 fw-semibold rounded-pill shadow-sm">
-        Download Free Tools
-      </a>
-    </div>
   </div>
 </section>
 

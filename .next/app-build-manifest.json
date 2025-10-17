@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(defaultLayout)/about/page": [
+    "/(defaultLayout)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/about/page.js"
+      "static/chunks/app/(defaultLayout)/page.js"
     ],
     "/(defaultLayout)/layout": [
       "static/chunks/webpack.js",
@@ -16,15 +16,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(defaultLayout)/page": [
+    "/(defaultLayout)/service/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/page.js"
+      "static/chunks/app/(defaultLayout)/service/page.js"
     ],
-    "/login/page": [
+    "/(defaultLayout)/servicepage/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/login/page.js"
+      "static/chunks/app/(defaultLayout)/servicepage/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

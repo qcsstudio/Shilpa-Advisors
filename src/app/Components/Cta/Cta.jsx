@@ -31,7 +31,7 @@ const Cta = ({ title,content, buttons = {},sideicon }) => {
 						</div>
 						<div className="dexon-button">
 							<div
-								className={`d-flex gap-4 mt-4 flex-wrap justify-content-start `}
+								className={`d-flex gap-4 mt-4 flex-wrap align-items-center justify-content-start  `}
 							>
 								{/* Button 1 */}
 								{buttons.btn1?.label && (
@@ -40,7 +40,7 @@ const Cta = ({ title,content, buttons = {},sideicon }) => {
 
 									>
 										{buttons.btn1.label}
-										<i className="bi bi-arrow-right-short ms-2"></i>
+										<i className="bi bi-arrow-right-short ms-2 rotate"></i>
 									</Link>
 								)}
 

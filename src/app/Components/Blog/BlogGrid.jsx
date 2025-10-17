@@ -1,8 +1,41 @@
+'use client'
 import Link from 'next/link';
 import data from '../../Data/blog.json';
 import Image from "next/image";
+import { useState ,useEffect} from 'react';
 
 const BlogGrid = () => {
+	  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  const fetchBlogs = async () => {
+    try {
+      const res = await fetch('/api/blog');
+      if (!res.ok) throw new Error('Failed to fetch blogs');
+      const data = await res.json();
+
+
+      setTimeout(() => {
+        setBlogs(data);
+        setLoading(false);
+
+        const totalPages = Math.ceil(data.length / blogsPerPage);
+        if (currentPage > totalPages) setCurrentPage(1);
+      }, 2000);
+    } catch (err) {
+      setError(err.message);
+      setLoading(false);
+    }
+  };
+console.log(blogs,"blogsblogsblogsblogs")
+
+  useEffect(() => {
+    fetchBlogs();
+    const interval = setInterval(fetchBlogs, 10000);
+    return () => clearInterval(interval);
+  }, []);
+
     return (
         <div className="blogs-section">
 		<div className="container">
