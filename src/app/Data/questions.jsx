@@ -13,7 +13,7 @@ export const service_Faq1 = [
     },
     {
         question:"How long to go live?",
-        answer:"Many SMEs launch in 3–6 weeks (rules/data determine pace)."
+        answer:"Many SMEs launch in 3-6 weeks (rules/data determine pace)."
     },
     {
         question:"Can we migrate mid-year with balances/history?",
@@ -37,7 +37,7 @@ export const service_Faq1_2 = [
     },
     {
         question:"Do you train the team and support after go-live?",
-        answer:"Role-based training + L1/L2/L3 support; 30–60–90 day tune-ups."
+        answer:"Role-based training + L1/L2/L3 support; 30-60-90 day tune-ups."
     },
     {
         question:"How do we start and what will it cost?",
@@ -47,7 +47,7 @@ export const service_Faq1_2 = [
 export const service_Faq2_1 = [
     {
         question:"How long does ISO 9001/45001/22000 take for an SME?",
-        answer:"Typical projects reach certification in 12–20 weeks, depending on the scope, number of sites, team bandwidth and your commitment."
+        answer:"Typical projects reach certification in 12-20 weeks, depending on the scope, number of sites, team bandwidth and your commitment."
     },
     {
         question:"Will you write our SOPs and forms?",
@@ -87,7 +87,7 @@ export const service_Faq2_2 = [
     },
     {
         question:"What does it cost?",
-        answer:"After a Readiness Call, you’ll receive a clear proposal based on standard(s), sites, headcount, and support level."
+        answer:"After a Readiness Call, you'll receive a clear proposal based on standard(s), sites, headcount, and support level."
     }
 ]
 
@@ -129,7 +129,7 @@ export const home_Faq2 = [
     },
     {
         question:"How fast can we go live?",
-        answer:"Typical go-live is 3–6 weeks; larger multi-country or multi-site rollouts may phase by region."
+        answer:"Typical go-live is 3-6 weeks; larger multi-country or multi-site rollouts may phase by region."
     },
     {
         question:"Do you provide ongoing support and quarterly reviews?",
