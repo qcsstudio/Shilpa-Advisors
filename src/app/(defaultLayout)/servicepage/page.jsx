@@ -1,14 +1,16 @@
 import Acheive from '@/app/Components/About/Acheive'
 import BreadCumb from '@/app/Components/Common/BreadCumb'
 import Cta from '@/app/Components/Cta/Cta'
+import Faq from '@/app/Components/Faq/Faq'
 import Questions from '@/app/Components/FaqQuestions/FaqQuestions'
+import Feature2 from '@/app/Components/Feature/Feature2'
 import Problem from '@/app/Components/Services/Problem'
-import {  service_Faq2 } from '@/app/Data/questions'
+import { service_Faq2, service_Faq2_1, service_Faq2_2 } from '@/app/Data/questions'
 import { service2 } from '@/app/Data/service/service1'
 import React from 'react'
 
 const page = () => {
-       const about1listItem = [
+    const about1listItem = [
         "Certification readiness with minimal disruption to operations",
         "Audit-proof documentation (SOPs, forms, registers, records) people actually use",
         "Measurable improvements in quality, safety, and compliance culture",
@@ -36,13 +38,15 @@ const page = () => {
                     />
                 </div>
             </div>
+            <Feature2 />
+            <Questions faqData={service_Faq2} />
+            <Faq leftdata={service_Faq2_1} rightdata={service_Faq2_2} />
+
             <Cta
-                title="IMPLEMENTATION & CHANGE MANAGEMENT"
-                content="Fit-Assessment → Prototype (1–2 weeks) with sample data → UAT & sign-off → Migration (masters, YTD, balances, history) → Go-Live (optional parallel run; period lock) → Post-Go (30–60–90 day tune-ups; L1/L2/L3 under SLA)."
-                buttons={{ btn1: { label: "Book my Fit-Assessment", link: "#" } }}
+                title=" Ready to pass audit—without the panic?"
+                buttons={{ btn1: { label: " Book ISO Readiness Call", link: "#" }, btn2: { label: " Get Sample SOP Pack", link: "#" } }}
                 sideicon={false}
             />
-             <Questions faqData={service_Faq2} />
 
 
 
