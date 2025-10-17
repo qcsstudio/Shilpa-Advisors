@@ -1,4 +1,4 @@
-export const service_Faq = [
+export const service_Faq1 = [
     {
         question:"Can you model our unique rules & approvals?",
         answer:"Yes—OT slabs, late/early thresholds, no-pay logic, and multi-level approvals by department/site/grade."
@@ -19,6 +19,10 @@ export const service_Faq = [
         question:"Can we migrate mid-year with balances/history?",
         answer:"Yes—masters, YTD, leave balances, historical movements."
     },
+   
+]
+export const service_Faq1_2 = [
+   
     {
         question:"What if policies change later?",
         answer:"Config change log; many settings self-service; larger shifts under SLA."
@@ -40,8 +44,7 @@ export const service_Faq = [
         answer:"Begin with a Free Fit-Assessment; proposal by employee count, modules and support level."
     }
 ]
-
-export const service_Faq2 = [
+export const service_Faq2_1 = [
     {
         question:"How long does ISO 9001/45001/22000 take for an SME?",
         answer:"Typical projects reach certification in 12–20 weeks, depending on the scope, number of sites, team bandwidth and your commitment."
@@ -62,6 +65,10 @@ export const service_Faq2 = [
         question:"What happens if we get nonconformities?",
         answer:" We drive root cause → CAPA and re-verify closure; you keep logs for surveillance."
     },
+   
+]
+export const service_Faq2_2 = [
+  
     {
         question:"Do you support HACCP/GMP with ISO 22000?",
         answer:" Yes—hazard analysis, PRPs/OPRPs, traceability & recall simulations, monitoring records."
@@ -84,7 +91,7 @@ export const service_Faq2 = [
     }
 ]
 
-export const home_Faq = [
+export const home_Faq1 = [
     {
         question:"Can the platform handle multi-country payroll and currencies?",
         answer:" Yes—country taxes, social security, statutory exports, multi-currency payslips, and bank files."
@@ -105,7 +112,10 @@ export const home_Faq = [
         question:"What formats are available and who designs curricula?",
         answer:" On-site, live virtual, and outdoor; curricula co-designed by function, level, and industry."
     },
-    {
+
+]
+export const home_Faq2 = [
+         {
         question:"How do you measure impact after a workshop/offsite?",
         answer:"Pre/post scores, manager feedback, adoption tasks, and KPI follow-ups."
     },
