@@ -9,25 +9,48 @@ const LoginPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError('');
+    setError("");
 
-    const res = await fetch('/api/auth/login', {
-      method: 'POST',
-      body: JSON.stringify(form),
-    });
+    try {
+      // ✅ Send login request
+      const res = await fetch("/api/auth/login/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Important!
+        },
+        body: JSON.stringify(form),
+      });
 
-    const data = await res.json();
-    setLoading(false);
+      // ✅ Handle non-JSON or failed response
+      let data;
+      try {
+        data = await res.json();
+      } catch {
+        data = { error: "Unexpected server response" };
+      }
 
-    if (res.ok) {
-      router.push('/dashboard');
-    } else {
-      setError(data.error);
+      setLoading(false);
+
+      if (res.ok && data.success) {
+        // ✅ Success → redirect
+        console.log("✅ Login successful:", data);
+        router.push("/dashboard");
+      } else {
+        // ⚠️ API responded with an error
+        setError(data?.error || "Invalid credentials. Please try again.");
+      }
+    } catch (err) {
+      // ❌ Network or unexpected failure
+      console.error("Login request failed:", err);
+      setError("Unable to connect to server. Please try again later.");
+      setLoading(false);
     }
   };
+   
 
   return (
     <div

@@ -14,10 +14,26 @@ export default function Nav({ setMobileToggle }) {
           About
         </Link>
       </li>
-      <li>
-        <Link href="/service" onClick={() => setMobileToggle(false)}>
+      <li className="menu-item-has-children">
+        <Link href="#" onClick={() => setMobileToggle(false)}>
           Services
         </Link>
+        <DropDown>
+          <ul>
+           
+            <li>
+              <Link href="/service" onClick={() => setMobileToggle(false)}>
+                Service 
+              </Link>
+            </li>
+            <li>
+              <Link href="/servicepage" onClick={() => setMobileToggle(false)}>
+                Service Details
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+
       </li>
       <li className="menu-item-has-children">
         <Link href="#">Pages</Link>

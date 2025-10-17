@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
-import connectMongo from '@/lib/mongodb';
-import { Admin } from '@/models/admin';
+import connectMongo from '@/app/lib/mongodb';
+import { Admin } from '@/app/models/admin';
 
 export async function POST(req) {
   await connectMongo();

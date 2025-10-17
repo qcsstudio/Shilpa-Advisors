@@ -1,5 +1,5 @@
-import AdminDashboardContainer from '@/Container/AdminDashboardContainer/AdminDashboardContainer'
 import React from 'react'
+import AdminDashboardContainer from '../Components/AdminDashboardContainer/AdminDashboardContainer'
 
 const page = () => {
   return (

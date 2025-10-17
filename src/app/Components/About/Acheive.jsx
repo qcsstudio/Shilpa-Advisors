@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const About1 = ({mainimage,title1,listItem,btnName,btnUrl}) => {
+const Acheive = ({mainimage,title1,listItem,btnName,btnUrl}) => {
     return (
         <div className="row about-bg align-items-center">
         
@@ -30,4 +30,4 @@ const About1 = ({mainimage,title1,listItem,btnName,btnUrl}) => {
     );
 };
 
-export default About1;
+export default Acheive;
