@@ -11,9 +11,9 @@ const page = () => {
                 subTitle="Faq"
                 title="Meet Our Most Experts <br>Team Members"
                 content="Ullamcorper risus ultrices risus lorem. Mollis libero in pellentesque Vulputate ut aliquam, consectetur turpis"
-            ></BreadCumb>
-            <Faq></Faq>
-            <Cta></Cta>
+            />
+            <Faq/>
+            <Cta/>
         </div>
     );
 };

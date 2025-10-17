@@ -10,7 +10,7 @@ const WhatToBring = () => {
                 <div className="container">
                     <div className="row ">
                         <h2 className='my-5'>What to Bring</h2>
-                        {whatToBring.map((item, i) => (
+                        {whatToBring?.map((item, i) => (
                             <div key={i} className="col-lg-3 col-md-6 ">
                                 <div className="feature-single-box feature-height">
                                     <div className="feature-content">

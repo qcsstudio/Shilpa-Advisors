@@ -11,7 +11,7 @@ const Scenerios = () => {
                 <div className="row ">
                     <h2 className='my-5'>REAL-WORLD SCENARIOS</h2>
 
-                    {scenarios.map((item, i) => (
+                    {scenarios?.map((item, i) => (
                         <div key={i} className="col-lg-3 col-md-6 ">
                             <div className="feature-single-box feature-height">
                                 <div className="feature-content">

@@ -54,7 +54,7 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="row">
-            {data.slice(0,3).map((item, i) => (
+            {data?.slice(0,3).map((item, i) => (
 				<div key={i} className="col-lg-4 col-md-6">
 					<div className="single-team-box">
 						<div className="team-thumb">
@@ -71,7 +71,7 @@ const Team = () => {
 			<div className="row brand-bg">
 				<div className="brand-list owl-carousel">
                     <Slider {...settings}>
-                    {brand.map((item, index)=>(
+                    {brand?.map((item, index)=>(
 					<div key={index} className="col-lg-12">
 						<div className="brand-thumb">
             <Image src={item.img} alt="img" width={127} height={24}   />

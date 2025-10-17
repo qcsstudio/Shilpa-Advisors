@@ -58,7 +58,7 @@ const Footer = () => {
 							<h4 className="widget-title">Informations</h4>
 							<div className="menu-quick-link-content">
 								<ul className="footer-menu">
-									{UsefulLinks.map((item, i) => (
+									{UsefulLinks?.map((item, i) => (
 										<li key={i}><Link href={item.link}> {item.title} </Link></li>
 									))}
 								</ul>

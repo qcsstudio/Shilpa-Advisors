@@ -40,7 +40,7 @@ const handleRightClick = (index) => {
             <div className="tab_container">
               <div id="tab1" className="tab_content">
                 <ul className="accordion">
-                  {leftdata.map((item, index) => (
+                  {leftdata?.map((item, index) => (
                     <li
                       key={index}
                       className={`cs_accordian ${
@@ -71,7 +71,7 @@ const handleRightClick = (index) => {
             <div className="tab_container">
               <div id="tab1" className="tab_content">
                 <ul className="accordion">
-                  {rightdata.map((item, index) => (
+                  {rightdata?.map((item, index) => (
                     <li
                       key={index}
                       className={`cs_accordian ${

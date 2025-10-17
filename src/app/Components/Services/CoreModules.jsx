@@ -22,7 +22,7 @@ const CoreModules = () => {
             </div>
 
             <div className="row ">
-                {data2.map((item, i) => (
+                {data2?.map((item, i) => (
                     <div key={i} className="col-lg-6 col-md-12 ">
                         <div className="feature-single-box">
                             <div className="feature-content">
