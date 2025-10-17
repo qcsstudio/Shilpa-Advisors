@@ -1667,10 +1667,19 @@ img {
     height: 300px;
 }
 
+.feature-content{
+    height: 260px;
+}
 .feature-content h2 {
     font-size: 24px;
     font-weight: 500;
     padding: 23px 0 20px;
+    white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .feature-content h2 {
+    white-space:normal;
+  }
 }
 
 /*Dream shape*/
@@ -1782,7 +1791,7 @@ img {
 ======================================================**/
 
 .row.about-bg {
-    padding:50px 0px;
+    /* padding:50px 0px; */
 }
 
 .about-item-list {
@@ -1937,7 +1946,7 @@ img {
 
 .about-section .row.about-bg {
     border-top: 1px solid rgba(255, 255, 255, 0.10196078431372549);
-    padding-top: 120px;
+    padding-top: 60px;
 }
 
 .about-section .about-item-list {

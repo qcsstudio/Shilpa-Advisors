@@ -38,7 +38,7 @@ const HeroBanner1 = ({ bgmage, Title1, Title2, content, btnName, btnUrl, heroSha
 											{buttons.btn1?.label && (
 												<button
 													onClick={buttons.btn1?.link || "#"}
-												className="rounded-2 bg-black text-white px-5"
+												className="rounded-2 bg-black text-white px-5 border-0"
 												>
 													{buttons.btn1.label}
 													<i className="bi bi-arrow-right-short ms-2"></i>
