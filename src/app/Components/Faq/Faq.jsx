@@ -48,7 +48,7 @@ const handleRightClick = (index) => {
                       }`}
                     >
                       <a onClick={() => handleLeftClick(index)} className={`${ index === openLeftIndex ? "border-bottom-0	" : ""}`}>
-                        <span>{item.question}</span>{" "}
+                        <span>{item.question}</span>
                         <i className="bi bi-chevron-down"></i>
                       </a>
                       <p
@@ -79,7 +79,7 @@ const handleRightClick = (index) => {
                       }`}
                     >
                       <a onClick={() => handleRightClick(index)}  className={`${ index === openRightIndex ? "border-bottom-0	" : ""}`}>
-                        <span>{item.question}</span>{" "}
+                        <span>{item.question}</span>
                         <i className="bi bi-chevron-down"></i>
                       </a>
                       <p
