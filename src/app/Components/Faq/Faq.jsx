@@ -31,7 +31,7 @@ const handleRightClick = (index) => {
         <div className="row">
           <div className="col-lg-12">
             <div className="dexon-section-title text-center padding-lg">
-              <h1>Frequently Asked Question's</h1>
+              <h1>{`Frequently Asked Question's`}</h1>
             </div>
           </div>
 
