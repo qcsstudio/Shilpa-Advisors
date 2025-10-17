@@ -1,9 +1,8 @@
 import BreadCumb from '@/app/Components/Common/BreadCumb';
 import React from 'react';
 import overflow from '@/app/Data/overflow.json'
-import Questions from '@/app/Components/FaqQuestions/FaqQuestions';
 import Cta from '@/app/Components/Cta/Cta';
-import { service_Faq } from '@/app/Data/questions';
+import { service_Faq1, service_Faq1_2 } from '@/app/Data/questions';
 import { service1 } from '@/app/Data/service/service1';
 import WORKFLOW from '@/app/Components/WORKFLOW/WORKFLOW';
 import Scenerios from '@/app/Components/Services/Scenerios';
@@ -12,6 +11,7 @@ import Problem from '@/app/Components/Services/Problem';
 import Acheive from '@/app/Components/About/Acheive';
 import CoreModules from '@/app/Components/Services/CoreModules';
 import Hrms from '@/app/Components/Services/Hrms';
+import Faq from '@/app/Components/Faq/Faq';
 
 
 const page = () => {
@@ -56,7 +56,7 @@ const page = () => {
                 <Scenerios />
                 <Reliability />
             </div>
-            <Questions faqData={service_Faq} />
+             <Faq leftdata={service_Faq1} rightdata={service_Faq1_2}/>
             <Cta
                 title="Ready to see your rules running inside Shilpa HRMS?"
                 buttons={{ btn1: { label: " Get a Live Demo", link: "#" }, btn2: { label: "Book Free Fit-Assessment", link: "#" } }}
