@@ -90,6 +90,98 @@ export const service_Faq2_2 = [
         answer:"After a Readiness Call, you'll receive a clear proposal based on standard(s), sites, headcount, and support level."
     }
 ]
+export const service_Faq3_1 = [
+  
+    {
+        question:"How do you ensure training leads to behaviour change?",
+        answer:"We use on-the-job tasks, manager coaching, and 30•60•90 check-ins to hard-wire habits."
+    },
+    {
+        question:"Can you customise programs to our SOPs and KPIs?",
+        answer:" Yes—content, role plays, audits, drills, and templates are tailored to your processes and metrics."
+    },
+    {
+        question:"Is OBT at Kitulgala safe?",
+        answer:" Yes—certified partners, risk briefings, safety gear, and facilitator-led debriefs to convert activity to actions."
+    },
+    {
+        question:"Do you train in Sinhala and Tamil?",
+        answer:"  Yes—EN/SI/TA delivery with bilingual materials where needed."
+    },
+    {
+        question:"How many participants per batch?",
+        answer:" Typically 15–30; we customise for role level and activity type."
+    }
+]
+export const service_Faq3_2 = [
+  
+    {
+        question:"Can you combine leadership plus ISO/audit topics?",
+        answer:" Absolutely—popular combo: Supervisory Skills + Internal Auditor for first-line leaders."
+    },
+    {
+        question:"Do we get templates and checklists?",
+        answer:" Yes—editable checklists, SOP aids, audit sheets, and action trackers are included."
+    },
+    {
+        question:"What venues do you recommend for OBT?",
+        answer:" We frequently run at Kitulgala with rafting and terrain challenges; hotel off-sites also available."
+    },
+    {
+        question:"How do you measure impact?",
+        answer:" Baseline vs. 30/60/90-day indicators (e.g., incident reports, CAPA closures, handover delays, NC counts)."
+    },
+    {
+        question:"Pricing?",
+        answer:"We propose after a Training Needs Call based on tracks, cohorts, language, and OBT logistics."
+    }
+]
+export const service_Faq4_1 = [
+  
+    {
+        question:"Can you standardise operations across all our sites?",
+        answer:"Yes—core SOPs with site-specific addenda so every post runs consistently while respecting local realities."
+    },
+    {
+        question:"Do you provide the registers and checklists?",
+        answer:" Yes—print-ready and digital templates for visitor, vehicle, key, material, incident, patrol, handover, and more."
+    },
+    {
+        question:"Who trains the guards and supervisors?",
+        answer:"We run induction & refresher sessions, plus supervisor coaching on documentation and de-escalation."
+    },
+    {
+        question:"How often do you conduct audits?",
+        answer:" Typically monthly reviews with surprise audits per site; cadence can be adjusted to contracts and risk."
+    },
+    {
+        question:"Do you cover incident response and escalation?",
+        answer:"Yes—playbooks for common scenarios, call trees, checklists, and drill scripts with post-drill debriefs."
+    }
+]
+export const service_Faq4_2 = [
+  
+    {
+        question:"Can you align us with buyer programmes (CSR/CTPAT-style)?",
+        answer:"We map your controls to requirements, close gaps, and prepare evidence packs for client or third-party assessments."
+    },
+    {
+        question:"How do you track corrective actions?",
+        answer:"Every audit produces a CAPA tracker with owners and due dates; we verify closure and record evidence."
+    },
+    {
+        question:"Can you integrate with our HRMS or use our formats?",
+        answer:" Yes—registers and reports can follow your templates; we’ll also recommend improvements for clarity and auditability."
+    },
+    {
+        question:"How fast can we see improvements?",
+        answer:" Most SMEs see visible standardisation within 2–6 weeks (pilot site first, then scale)."
+    },
+    {
+        question:"What does it cost?",
+        answer:"After a Security Compliance Review, you’ll receive a proposal based on sites, scope (SOPs/training/audits), and frequency."
+    }
+]
 
 export const home_Faq1 = [
     {

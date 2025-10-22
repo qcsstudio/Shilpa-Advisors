@@ -20,6 +20,33 @@ export const howWework = [
         desc: "KPIs, reports, refreshers, surveillance"
     }
 ]
+export const howitwork = [
+    {
+        icon: "/assets/images/resource/icon1.png",
+        title: "Site Walk-Through & Gap Scan",
+        desc: "map current post orders, registers, risks"
+    },
+    {
+        icon: "/assets/images/resource/icon2.png",
+        title: "SOP & Register Build",
+        desc: "create/edit site packs; issue checklists & forms"
+    },
+    {
+        icon: "/assets/images/resource/icon3.png",
+        title: "Induction & Refreshers",
+        desc: " deliver sessions; schedule drills and records"
+    },
+    {
+        icon: "/assets/images/resource/icon3.png",
+        title: "Surprise Audits",
+        desc: "scorecards, photos, CAPA; track closure to green"
+    },
+    {
+        icon: "/assets/images/resource/icon3.png",
+        title: "Client-Facing Review",
+        desc: " share dashboard, lessons learned, next-quarter plan"
+    }
+]
 
 export const whatWeDo = [
     {

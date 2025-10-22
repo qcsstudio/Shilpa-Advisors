@@ -4,9 +4,11 @@ import SectionTitle from '@/app/Components/Common/SectionTitle'
 import Cta from '@/app/Components/Cta/Cta'
 import Faq from '@/app/Components/Faq/Faq'
 import Feature2 from '@/app/Components/Feature/Feature2'
+import HomeResources from '@/app/Components/Home/HomeResources'
 import Problem from '@/app/Components/Services/Problem'
 import WhySmeChoose from '@/app/Components/Services2/WhySmeChoose'
 import { service_Faq2_1, service_Faq2_2 } from '@/app/Data/questions'
+import { resourceData, service2Lead } from '@/app/Data/Resources/HomeReources'
 import { service2 } from '@/app/Data/service/service1'
 import { shilpaMethod } from '@/app/Data/service/service2method'
 import Image from 'next/image'
@@ -49,7 +51,7 @@ const page = () => {
                     />
                 </div>
             </div>
-            <Feature2 data={shilpaMethod} />
+            <Feature2 data={shilpaMethod} heading="The Shilpa Method" />
             <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
 
@@ -64,7 +66,7 @@ const page = () => {
                         <div className="col-lg-6">
                             <div className="dexon-section-title ">
                                 <SectionTitle
-                                    Title="Why choose us"
+                                    Title="Why SMEs choose us"
                                 ></SectionTitle>
                             </div>
                             <div className="serviceCard-list ">
@@ -96,6 +98,7 @@ const page = () => {
                 buttons={{ btn1: { label: " Book ISO Readiness Call", link: "#" }, btn2: { label: " Get Sample SOP Pack", link: "#" } }}
                 sideicon={false}
             />
+            <HomeResources resources={service2Lead} />
 
 
 

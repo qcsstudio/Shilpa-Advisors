@@ -12,6 +12,8 @@ import Acheive from '@/app/Components/About/Acheive';
 import CoreModules from '@/app/Components/Services/CoreModules';
 import Hrms from '@/app/Components/Services/Hrms';
 import Faq from '@/app/Components/Faq/Faq';
+import { customhrms } from '@/app/Data/service/Hrms';
+import { scenarios } from '@/app/Data/service/scenerios';
 
 
 const page = () => {
@@ -42,7 +44,7 @@ const page = () => {
                         btnUrl="/about"
                     />
                     <CoreModules />
-                    <Hrms />
+                    <Hrms data={customhrms} heading="CUSTOMISABLE HRMS" />
                 </div>
             </div>
             <WORKFLOW data={overflow} heading="GUIDED WORKFLOW" />
@@ -52,8 +54,9 @@ const page = () => {
                 buttons={{ btn1: { label: "Book my Fit-Assessment", link: "#" } }}
                 sideicon={false}
             />
+            
             <div className="about-section style-three py-0 pb-5" data-background="/assets/images/resource/about-bg3.jpg">
-                <Scenerios />
+                <Scenerios data={scenarios} />
                 <Reliability />
             </div>
              <Faq leftdata={service_Faq1} rightdata={service_Faq1_2}/>
