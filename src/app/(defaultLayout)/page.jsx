@@ -12,6 +12,7 @@ import { howWework } from '../Data/services2';
 import {handleuseCalendly}  from '../Components/CalendlyBadge/CalendlyBadge';
 import Faq from '../Components/Faq/Faq';
 import {  home_Faq1, home_Faq2 } from '@/app/Data/questions';
+import { resourceData } from '../Data/Resources/HomeReources';
 
 
 const Home = () => {
@@ -41,7 +42,7 @@ const Home = () => {
             <WhyChoose/>
             <Testimonial1/>
             <Services2 headcontent={Service2HeadingContent} data={howWework}/>
-            <HomeResources/>
+            <HomeResources resources={resourceData}/>
             <Faq leftdata={home_Faq1} rightdata={home_Faq2}/>
             <Cta
                 title="Ready to build compliant, growth-ready operations?"

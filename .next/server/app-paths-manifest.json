@@ -1,4 +1,7 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(defaultLayout)/page": "app/(defaultLayout)/page.js"
+  "/(defaultLayout)/privatesecurityservice/page": "app/(defaultLayout)/privatesecurityservice/page.js",
+  "/(defaultLayout)/service/page": "app/(defaultLayout)/service/page.js",
+  "/(defaultLayout)/servicepage/page": "app/(defaultLayout)/servicepage/page.js",
+  "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
+  "/(defaultLayout)/employeetrainingservice/page": "app/(defaultLayout)/employeetrainingservice/page.js"
 }
