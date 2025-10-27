@@ -22,7 +22,8 @@ const BreadCumb = ({ bgImg, title, content, buttons }) => {
               <h1>{parse(title)}</h1>
               <p>{content}</p>
             </div>
-            <div className="hero-button ">
+
+            {buttons && <div className="hero-button ">
               <div
                 className={`d-flex gap-4 mt-4 flex-wrap justify-content-center`}
               >
@@ -40,12 +41,15 @@ const BreadCumb = ({ bgImg, title, content, buttons }) => {
                     onClick={buttons.btn2?.link || "#"}
                     className="rounded-2 bg-black text-white px-5 py-3 border-0"
                   >
-                    {buttons.btn2.label}
+                    {buttons?.btn2?.label}
                     <i className="bi bi-arrow-right-short ms-2 "></i>
                   </button>
                 )}
               </div>
-            </div>
+            </div>}
+
+
+
           </div>
           <div className="inner-page-shape">
             <div className="inner-shape">
