@@ -65,9 +65,9 @@ const Contact = () => {
   return (
     <div className="contact-us py-5">
       <div className="container">
-        <div className="row align-items-start">
+        <div className="row align-items-center ">
           {/* Left Image */}
-          <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="col-lg-6 mb-4 mb-lg-0 ">
             <div className="contact-thumb text-center">
               <Image
                 src="/assets/images/resource/contact.jpg"
@@ -84,7 +84,7 @@ const Contact = () => {
             <div className="dexon-section-title  ">
               <h1>Send Us a Message</h1>
               <p>
-                Send us your valuable message & we’ll reply to you soon!
+                {`Send us your valuable message & we'll reply to you soon!`}
               </p>
             </div>
 
