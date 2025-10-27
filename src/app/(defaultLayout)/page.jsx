@@ -16,12 +16,14 @@ import { resourceData } from '../Data/Resources/HomeReources';
 
 
 const Home = () => {
-    const HeadingContent = { title1: 'Services' }
+    const HeadingContent = { title1: 'Services',
+        Content:"From HRMS payroll (EPF/ETF/APIT) to ISO certification, Employee Training & OBT (Kitulgala), and Private Security SOPs, we turn standards into daily practice for Sri Lankan SMEs. Fast rollouts, practical tools, and audit-ready results—without disrupting operations."
+
+     }
     	const Service2HeadingContent = {
 		subtitle: 'Improve your Business',
 		title: 'How We Work',
-		Content: '(Add Content Here)',
-		btnurl: '/service',
+		Content: 'We make complex standards simple: discover the gaps, fix with practical docs & training, and prove with audits. You get calm month-ends, confident audit days, and a team that owns the process.',
 		mainImg: '/assets/images/resource/servc-thumb.png'
 	}
      const calendlyAction = handleuseCalendly()
@@ -34,7 +36,7 @@ const Home = () => {
                 content=" One partner for multi-country payroll and attendance (HRMS), end-to-end ISO readiness, leadership training & team offsites, and private security SOPs, audits, and event operations—start to scale."
                 heroShape1="/assets/images/slider/Frame-7.png"
                 heroShape2="/assets/images/slider/hero-shp2.png"
-                buttons={{ btn1: { label: " Get a 15-Minute Fit Call", link:calendlyAction }, btn2: { label: "Watch 90-sec HRMS Demo", link: "#" } }}
+                buttons={{ btn1: { label: " Get a 15-Minute Fit Call", link:calendlyAction }, btn2: { label: "Watch 90-sec HRMS Demo", link: "https://youtu.be/COPPFiE2RwQ" } }}
               
             />
             <Feature1/>
@@ -46,7 +48,7 @@ const Home = () => {
             <Faq leftdata={home_Faq1} rightdata={home_Faq2}/>
             <Cta
                 title="Ready to build compliant, growth-ready operations?"
-                buttons={{ btn1: { label: " Get Demo", link: "#" }, btn2: { label: "Talk to Sales", link: "#" } }}
+                buttons={{ btn1: { label: " Get Demo", link: calendlyAction }, btn2: { label: "Talk to Sales", link: calendlyAction } }}
                 sideicon={true}
             />
         </div>

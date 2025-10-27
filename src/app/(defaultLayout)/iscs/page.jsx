@@ -1,14 +1,14 @@
+'use client'
 import Acheive from '@/app/Components/About/Acheive'
+import { handleuseCalendly } from '@/app/Components/CalendlyBadge/CalendlyBadge'
 import BreadCumb from '@/app/Components/Common/BreadCumb'
 import SectionTitle from '@/app/Components/Common/SectionTitle'
 import Cta from '@/app/Components/Cta/Cta'
 import Faq from '@/app/Components/Faq/Faq'
 import Feature2 from '@/app/Components/Feature/Feature2'
-import HomeResources from '@/app/Components/Home/HomeResources'
+import LeadMagnets from '@/app/Components/Services/LeadMagnets'
 import Problem from '@/app/Components/Services/Problem'
-import WhySmeChoose from '@/app/Components/Services2/WhySmeChoose'
 import { service_Faq2_1, service_Faq2_2 } from '@/app/Data/questions'
-import { resourceData, service2Lead } from '@/app/Data/Resources/HomeReources'
 import { service2 } from '@/app/Data/service/service1'
 import { shilpaMethod } from '@/app/Data/service/service2method'
 import Image from 'next/image'
@@ -29,6 +29,7 @@ const page = () => {
         "CAPA log, NC tracker, management review pack",
         "Pre-audit rehearsal + certification-day script"
     ]
+    const calendlyAction = handleuseCalendly()
     return (
         <>
             <BreadCumb
@@ -36,8 +37,8 @@ const page = () => {
                 subTitle="Services"
                 title="Get ISO-Certified—Fast, Practical, Audit-Ready"
                 content="We take Sri Lankan SMEs from Gap → Documentation → Training → Internal Audits → Certification across not limited to ISO 9001, 45001, 22000, 14001, 21001, 39001 (plus HACCP/GMP). Clear deliverables, no last-minute fire drills."
-                button1=" Book ISO Readiness Call "
-                button2=" Download ISO 9001 Checklist (Free)"
+                buttons={{ btn1: { label: " Book ISO Readiness Call ", link: calendlyAction }, btn2: { label: "Book Free Fit-Assessment", link: calendlyAction } }}
+
             />
             <div className="about-section style-three " data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
@@ -95,10 +96,10 @@ const page = () => {
 
             <Cta
                 title=" Ready to pass audit—without the panic?"
-                buttons={{ btn1: { label: " Book ISO Readiness Call", link: "#" }, btn2: { label: " Get Sample SOP Pack", link: "#" } }}
+                buttons={{ btn1: { label: " Book ISO Readiness Call", link: calendlyAction } }} //, btn2: { label: " Get Sample SOP Pack", link: "#" }
                 sideicon={false}
             />
-            <HomeResources resources={service2Lead} />
+            <LeadMagnets  />
 
 
 

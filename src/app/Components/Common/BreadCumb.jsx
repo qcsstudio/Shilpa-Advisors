@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 import Image from "next/image";
 import Link from "next/link";
 
-const BreadCumb = ({ bgImg, title, content, button1, button2 }) => {
+const BreadCumb = ({ bgImg, title, content, buttons }) => {
 
   useEffect(() => {
     loadBackgroudImages();
@@ -22,11 +22,29 @@ const BreadCumb = ({ bgImg, title, content, button1, button2 }) => {
               <h1>{parse(title)}</h1>
               <p>{content}</p>
             </div>
-            <div className="breatcam-section-button ">
-              <Link href="#"> {button1} <i className="bi bi-arrow-right-short"></i></Link>
-              {button2 &&
-                <Link href="#"> {button2} <i className="bi bi-arrow-right-short"></i></Link>
-              }
+            <div className="hero-button ">
+              <div
+                className={`d-flex gap-4 mt-4 flex-wrap justify-content-center`}
+              >
+                {buttons.btn1?.label && (
+                  <button
+                    onClick={buttons.btn1?.link || "#"}
+                    className="rounded-2 bg-black text-white px-5 py-3 border-0"
+                  >
+                    {buttons.btn1.label}
+                    <i className="bi bi-arrow-right-short ms-2 "></i>
+                  </button>
+                )}
+                {buttons.btn2?.label && (
+                  <button
+                    onClick={buttons.btn2?.link || "#"}
+                    className="rounded-2 bg-black text-white px-5 py-3 border-0"
+                  >
+                    {buttons.btn2.label}
+                    <i className="bi bi-arrow-right-short ms-2 "></i>
+                  </button>
+                )}
+              </div>
             </div>
           </div>
           <div className="inner-page-shape">

@@ -35,24 +35,24 @@ const Cta = ({ title,content, buttons = {},sideicon }) => {
 							>
 								{/* Button 1 */}
 								{buttons.btn1?.label && (
-									<Link
-										href={buttons.btn1.link || "#"}
+									<button
+										onClick={buttons.btn1.link || "#"}
 
 									>
 										{buttons.btn1.label}
 										<i className="bi bi-arrow-right-short ms-2 rotate"></i>
-									</Link>
+									</button>
 								)}
 
 								{/* Button 2 */}
 								{buttons.btn2?.label && (
-									<Link
-										href={buttons.btn2.link || "#"}
+									<button
+										onClick={buttons.btn2.link || "#"}
 
 									>
 										{buttons.btn2.label}
 										<i className="bi bi-arrow-right-short ms-2"></i>
-									</Link>
+									</button>
 								)}
 							</div>
 						</div>

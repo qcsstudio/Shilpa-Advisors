@@ -9,6 +9,7 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';  // theme
 import 'primereact/resources/primereact.min.css';                  // core css
 import 'primeicons/primeicons.css';                                // icons
 import CalendlyBadge from "./Components/CalendlyBadge/CalendlyBadge";
+import Script from "next/script";
 
 const kumbh_sans = Kumbh_Sans({
   subsets: ['latin'],
@@ -41,16 +42,21 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="author" content="Themeservices" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <script id="gtm-script" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-NMS2R6PR');
-          `}
-        </script>
-         <script
+      </head>
+      <body className={`${kumbh_sans.variable} ${clashdisplay.variable}`}>
+         <Script id="gtm-script" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NMS2R6PR');`}
+        </Script>
+
+        {/* ✅ Microsoft Clarity Script */}
+        <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -61,8 +67,6 @@ export default function RootLayout({ children }) {
             })(window, document, "clarity", "script", "tqepv622yu");`,
           }}
         />
-      </head>
-      <body className={`${kumbh_sans.variable} ${clashdisplay.variable}`}>
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMS2R6PR"
             height="0" width="0"  style={{ display: "none", visibility: "hidden" }}></iframe>

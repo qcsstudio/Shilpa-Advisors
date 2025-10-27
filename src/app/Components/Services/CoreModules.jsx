@@ -30,7 +30,7 @@ const CoreModules = () => {
                                 <p>{item.desc}</p>
                                 <p>{item.desc2}</p>
                                 <div className='breatcam-section-button d-flex'>
-                                    <Link href="#">{item.cta}<i className="bi bi-arrow-right-short"></i></Link>
+                                    <p >{item.cta}<i className="bi bi-arrow-right-short"></i></p>
 
                                 </div>
 

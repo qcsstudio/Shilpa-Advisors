@@ -1,3 +1,4 @@
+'use client'
 import BreadCumb from '@/app/Components/Common/BreadCumb';
 import React from 'react';
 import overflow from '@/app/Data/overflow.json'
@@ -14,6 +15,7 @@ import Hrms from '@/app/Components/Services/Hrms';
 import Faq from '@/app/Components/Faq/Faq';
 import { customhrms } from '@/app/Data/service/Hrms';
 import { scenarios } from '@/app/Data/service/scenerios';
+import { handleuseCalendly } from '@/app/Components/CalendlyBadge/CalendlyBadge';
 
 
 const page = () => {
@@ -23,6 +25,7 @@ const page = () => {
         "Audit-ready month-end with reconciliation, statutory bundles and period locking.",
         "Buyer confidence and faster vendor onboarding"
     ]
+     const calendlyAction = handleuseCalendly()
     return (
         <div>
             <BreadCumb
@@ -30,8 +33,8 @@ const page = () => {
                 subTitle="Services"
                 title="HR & Payroll for Sri Lankan SMEs—<br/>Fast, Compliant, Customisable"
                 content="Automate attendance, leave and payroll with EPF/ETF/APIT built-in. Configure approvals, payslips, bank files and reports to match your flow—then lock month-end with audit-ready packs."
-                button1="Get a Live Demo"
-                button2="Book Free Fit-Assessment"
+                buttons={{ btn1: { label: "Get a Live Demo", link: calendlyAction }, btn2: { label: "Book Free Fit-Assessment", link: calendlyAction } }}
+
             />
             <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
@@ -51,18 +54,18 @@ const page = () => {
             <Cta
                 title="IMPLEMENTATION & CHANGE MANAGEMENT"
                 content="Fit-Assessment → Prototype (1–2 weeks) with sample data → UAT & sign-off → Migration (masters, YTD, balances, history) → Go-Live (optional parallel run; period lock) → Post-Go (30–60–90 day tune-ups; L1/L2/L3 under SLA)."
-                buttons={{ btn1: { label: "Book my Fit-Assessment", link: "#" } }}
+                buttons={{ btn1: { label: "Book my Fit-Assessment", link:calendlyAction  } }}
                 sideicon={false}
             />
-            
+
             <div className="about-section style-three py-0 pb-5" data-background="/assets/images/resource/about-bg3.jpg">
                 <Scenerios data={scenarios} />
                 <Reliability />
             </div>
-             <Faq leftdata={service_Faq1} rightdata={service_Faq1_2}/>
+            <Faq leftdata={service_Faq1} rightdata={service_Faq1_2} />
             <Cta
                 title="Ready to see your rules running inside Shilpa HRMS?"
-                buttons={{ btn1: { label: " Get a Live Demo", link: "#" }, btn2: { label: "Book Free Fit-Assessment", link: "#" } }}
+                buttons={{ btn1: { label: " Get a Live Demo", link: calendlyAction }}}
                 sideicon={false}
             />
 

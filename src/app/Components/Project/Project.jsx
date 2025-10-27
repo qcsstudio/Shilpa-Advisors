@@ -45,7 +45,7 @@ const Project = () => {
 									<Image src="/assets/images/resource/project-icon.png" alt="img" width={82} height={49}   />
 								</div>
 								<div className="dexon-button2 text-center">
-									<Link href="/contact">Open full case studies <i className="bi-arrow-right-short"></i></Link>
+									<Link href="/casestudies">Open full case studies <i className="bi-arrow-right-short"></i></Link>
 								</div>
 							</div>
 						</div>
