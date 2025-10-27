@@ -3657,6 +3657,11 @@ img {
     color: #101210;
 }
 
+/* mission & Vision */
+.VisionMissionCard{
+    height: 250px;
+}
+
 /*** Sub Menu Style 
 ==========================***/
 
@@ -3798,6 +3803,19 @@ img {
     position: relative;
     /* left: 0; */
 }
+.hero-button button {
+    font-size: 16px;
+    padding: 12px 38px 15px;
+    background: #101210;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: start;
+    transition: .5s;
+    position: relative;
+    /* left: 0; */
+}
 
 .hero-button a:before {
     position: absolute;
@@ -3812,8 +3830,21 @@ img {
     transform: scale(0);
     transition: .5s;
 }
+.hero-button button:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: #ffde5d;
+    transform: scale(0);
+    transition: .5s;
+}
 
-.hero-button a i {
+.hero-button  i {
     font-size: 26px;
     position: relative;
     top: 5px;
@@ -4183,6 +4214,28 @@ img {
     margin-top: 0;
 }
 
+/* Case Study */
+.hrms-section {
+  background-color: #F8F8F9;
+  transition: all 0.3s ease;
+}
+.hrms-section h3{
+ font-size: 34px;
+}
+.hrms-section p{
+ font-size: 20px;
+}
+
+.hrms-section:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.hrms-image img {
+  object-fit: cover;
+}
+
+
 /**
 ======================================================
 <--  dexon About Section Css -->
@@ -4216,6 +4269,7 @@ img {
     display: flex;
     align-items: start;
     gap: 5px;
+    color:black
 }
 
 .serviceCard-list ul li i {
@@ -4226,6 +4280,18 @@ img {
 
 .dexon-button a {
     position: relative;
+}
+.dexon-button button {
+    color:#ffde5d ;
+    background-color: transparent;
+    border :0px
+
+}
+.dexon-button button:focus,
+.dexon-button button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .about-button2 {
@@ -4485,6 +4551,7 @@ img {
 }
 .profile-card {
   padding: 2rem;
+  margin:10px 0px 
 }
 
 .profile-card h5 {
@@ -4660,7 +4727,7 @@ span.video-title {
 }
 
 .single-service-box.upper {
-    /* background: url(/assets/images/resource/box-bg1.png); */
+    background: url(/assets/images/resource/box-bg1.png);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4669,17 +4736,16 @@ span.video-title {
 }
 
 .single-service-box.upper2 {
-    /* background: url(/assets/images/resource/box-bg2.png); */
+    background: url(/assets/images/resource/box-bg2.png);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 330px;
-    margin-top: 200px;
 }
 
 .single-service-box.upper4 {
-    /* background: url(/assets/images/resource/box-bg1.png); */
+    background: url(/assets/images/resource/box-bg1.png);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4688,7 +4754,7 @@ span.video-title {
 }
 
 .single-service-box.upper3 {
-    /* background: url(/assets/images/resource/box-bg3.png); */
+    background: url(/assets/images/resource/box-bg3.png);
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4709,24 +4775,24 @@ p.service-desc {
     padding: 15px 0 5px;
 }
 
-a.dexon-button {
+/* a.dexon-button {
     font-weight: 500;
     text-decoration: underline;
     color: #101210;
     transition: .5s;
     position: relative;
     z-index: 2;
-}
+} */
 
-a.dexon-button:hover {
+/* a.dexon-button:hover {
     color: #ffde5d;
-}
+} */
 
 .single-service-box.upper2 a.dexon-button:hover {
     color: #fff;
 }
 
-a.dexon-button i {
+.dexon-button i {
     font-size: 28px;
     position: relative;
     top: 5px;
@@ -4746,8 +4812,8 @@ a.dexon-button i {
     padding: 40px 0 34px;
 }
 
-.dexon-button a:hover {
-    color: #FFDE5D;
+.dexon-button button:hover {
+    color: #f1c929;
 }
 
 /*shape*/
@@ -4843,7 +4909,7 @@ a.dexon-button i {
 
 .services-icon {
     float: right;
-    margin-top: -80px;
+    margin-top: -40px;
 }
 
 .services-icon a {
@@ -6025,8 +6091,33 @@ ul.footer-menu li a:hover {
     transition: .5s;
     position: relative;
 }
+.breatcam-section-button p {
+    font-size: 16px;
+    padding: 12px 38px 15px;
+    background: #101210;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: start;
+    transition: .5s;
+    position: relative;
+}
 
 .breatcam-section-button a:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: #ffde5d;
+    transform: scale(0);
+    transition: .5s;
+}
+.breatcam-section-button p:before {
     position: absolute;
     content: "";
     z-index: -1;
@@ -6050,8 +6141,21 @@ ul.footer-menu li a:hover {
     display: inline-block;
 
 }
+.breatcam-section-button p i {
+    font-size: 26px;
+    position: relative;
+    top: 5px;
+    left: 2px;
+    transform: rotate(-52deg);
+    transition: .5s;
+    display: inline-block;
+
+}
 
 .breatcam-section-button a:hover:before {
+    transform: scale(1);
+}
+.breatcam-section-button p:hover:before {
     transform: scale(1);
 }
 

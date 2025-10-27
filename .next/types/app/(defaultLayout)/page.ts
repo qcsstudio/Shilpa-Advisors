@@ -1,4 +1,4 @@
-// File: C:\Users\w\Desktop\Shilpa-Advisors\src\app\(defaultLayout)\page.jsx
+// File: C:\Users\HP\Desktop\Shilpa-Advisors\src\app\(defaultLayout)\page.jsx
 import * as entry from '../../../../src/app/(defaultLayout)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

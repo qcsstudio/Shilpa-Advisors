@@ -22,22 +22,22 @@ export default function Nav({ setMobileToggle }) {
           <ul>
            
             <li>
-              <Link href="/service" onClick={() => setMobileToggle(false)}>
+              <Link href="/hrms" onClick={() => setMobileToggle(false)}>
                 HR Management Software for SMEs 
               </Link>
             </li>
             <li>
-              <Link href="/servicepage" onClick={() => setMobileToggle(false)}>
+              <Link href="/iscs" onClick={() => setMobileToggle(false)}>
                International Standards Consultation & Support 
               </Link>
             </li>
             <li>
-              <Link href="/employeetrainingservice" onClick={() => setMobileToggle(false)}>
+              <Link href="/etd" onClick={() => setMobileToggle(false)}>
                Employee Training & Development
               </Link>
             </li>
             <li>
-              <Link href="/privatesecurityservice" onClick={() => setMobileToggle(false)}>
+              <Link href="/psis" onClick={() => setMobileToggle(false)}>
               Private Security Industry Support 
               </Link>
             </li>
@@ -107,6 +107,11 @@ export default function Nav({ setMobileToggle }) {
       <li>
         <Link href="/contact" onClick={() => setMobileToggle(false)}>
           Contact
+        </Link>
+      </li>
+      <li>
+        <Link href="/casestudies" onClick={() => setMobileToggle(false)}>
+          Case Study
         </Link>
       </li>
     </ul>

@@ -6,9 +6,9 @@ const VisionMissionCards = () => {
       <div className="row g-4 justify-content-center align-items-center">
         {/* Vision Card */}
         <div className="col-12 col-md-10 col-lg-6">
-          <div className="card bg-black text-white rounded-4 p-4 h-100">
+          <div className="card bg-black text-white rounded-4 p-4   VisionMissionCard">
             <div className="d-flex justify-content-between align-items-center mb-3">
-              <h2 className="fw-bold text-white" style={{ fontSize: "40px", fontFamily: "Unbounded" }}>
+              <h2 className="fw-semibold text-white" style={{ fontSize: "40px",  }}>
                 Our Vision
               </h2>
               <Image
@@ -18,7 +18,7 @@ const VisionMissionCards = () => {
                 alt="vision icon"
               />
             </div>
-            <p className="fs-5" style={{ fontFamily: "Montserrat" }}>
+            <p className="fs-5">
               Sri Lanka’s most trusted SME partner for turning standards into everyday practice—clarity, compliance, confidence at every site.
             </p>
           </div>
@@ -26,9 +26,9 @@ const VisionMissionCards = () => {
 
         {/* Mission Card */}
         <div className="col-12 col-md-10 col-lg-6">
-          <div className="card bg-black text-white rounded-4 p-4 h-100">
+          <div className="card bg-black text-white rounded-4 p-4  VisionMissionCard">
             <div className="d-flex justify-content-between align-items-center mb-3">
-              <h2 className="fw-bold text-white" style={{ fontSize: "40px", fontFamily: "Unbounded" }}>
+              <h2 className="fw-semibold text-white" style={{ fontSize: "40px",}}>
                 Our Mission
               </h2>
               <Image
@@ -38,7 +38,7 @@ const VisionMissionCards = () => {
                 alt="mission icon"
               />
             </div>
-            <p className="fs-5" style={{ fontFamily: "Montserrat" }}>
+            <p className="fs-5" >
               Simplify compliance · Automate the boring · Build capability · Measure what matters.
 
             </p>

@@ -1,7 +1,7 @@
 {
-  "/(defaultLayout)/privatesecurityservice/page": "app/(defaultLayout)/privatesecurityservice/page.js",
-  "/(defaultLayout)/service/page": "app/(defaultLayout)/service/page.js",
-  "/(defaultLayout)/servicepage/page": "app/(defaultLayout)/servicepage/page.js",
   "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
-  "/(defaultLayout)/employeetrainingservice/page": "app/(defaultLayout)/employeetrainingservice/page.js"
+  "/(defaultLayout)/hrms/page": "app/(defaultLayout)/hrms/page.js",
+  "/(defaultLayout)/iscs/page": "app/(defaultLayout)/iscs/page.js",
+  "/(defaultLayout)/casestudies/page": "app/(defaultLayout)/casestudies/page.js",
+  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js"
 }

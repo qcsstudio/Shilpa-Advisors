@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(defaultLayout)/privatesecurityservice/page": [
+    "/(defaultLayout)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/privatesecurityservice/page.js"
+      "static/chunks/app/(defaultLayout)/about/page.js"
     ],
     "/(defaultLayout)/layout": [
       "static/chunks/webpack.js",
@@ -16,25 +16,30 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(defaultLayout)/service/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/service/page.js"
-    ],
-    "/(defaultLayout)/servicepage/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/servicepage/page.js"
-    ],
     "/(defaultLayout)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(defaultLayout)/page.js"
     ],
-    "/(defaultLayout)/employeetrainingservice/page": [
+    "/(defaultLayout)/hrms/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(defaultLayout)/employeetrainingservice/page.js"
+      "static/chunks/app/(defaultLayout)/hrms/page.js"
+    ],
+    "/(defaultLayout)/psis/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/psis/page.js"
+    ],
+    "/(defaultLayout)/iscs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/iscs/page.js"
+    ],
+    "/(defaultLayout)/casestudies/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(defaultLayout)/casestudies/page.js"
     ]
   }
 }

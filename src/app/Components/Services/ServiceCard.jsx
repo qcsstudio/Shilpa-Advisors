@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ServiceCard = ({ data }) => {
     return (
         <>
@@ -13,7 +15,7 @@ const ServiceCard = ({ data }) => {
                         </ul>
                     </div>
 
-                    <button className="btn service-content-btn mt-4">{item.btnname}</button>
+                    <Link href={item.link} className="btn service-content-btn mt-4">{item.btnname}</Link>
                 </div>
             ))}
         </>

@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const Footer = () => {
 
-	const UsefulLinks = [	
+	const UsefulLinks = [
 		{ title: 'Home', link: '/' },
 		{ title: 'About', link: '/about' },
 		{ title: 'Services', link: '/service' },
 		{ title: 'Latest Blog', link: '/blog' },
 		{ title: 'Case Studies', link: '#' },
 		{ title: 'Contact Us', link: '/contact' },
-		
+
 	];
 
 	const AdressContent = {
@@ -34,7 +34,7 @@ const Footer = () => {
 
 	return (
 		<div className="footer-section" data-background="/assets/images/resource/footer-bg.jpg">
-
+			
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-3 col-md-6">
@@ -46,10 +46,10 @@ const Footer = () => {
 							</div>
 
 							<div className="follow-company-icon mt-3">
-								<a href="#"><i className="bi bi-facebook"></i> </a>
-								<a href="#"> <i className="bi bi-twitter"></i></a>
-								<a href="#"> <i className="bi bi-linkedin"></i> </a>
-								<a href="#"> <i className="bi bi-pinterest"></i> </a>
+								<Link href="https://www.youtube.com/@ShilpaAdvisors"><i className="bi bi-facebook"></i> </Link>
+								<Link href="#"> <i className="bi bi-youtube"></i></Link>
+								<Link href="https://linkedin.com/company/shilpa-advisors"> <i className="bi bi-linkedin"></i> </Link>
+								<Link href="#"> <i className="bi bi-instagram"></i> </Link>
 							</div>
 						</div>
 					</div>
@@ -109,7 +109,7 @@ const Footer = () => {
 							<ul>
 								<li><Link href="/about">Privacy Policy</Link></li>
 								<li><Link href="/service">Terms & Conditions</Link></li>
-								
+
 							</ul>
 						</div>
 					</div>

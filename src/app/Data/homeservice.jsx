@@ -8,7 +8,8 @@ export const homeservicecard1=[
             "Self-Service: leave, approvals, accruals",
             "Period locking; reconciliations; scheduled packs"
         ],
-        btnname:"See HRMS in Action"
+        btnname:"See HRMS in Action",
+        link:"/hrms"
     }
 ]
 export const homeservicecard2=[
@@ -21,7 +22,8 @@ export const homeservicecard2=[
             "Audit-day support; surveillance readiness",
             
         ],
-        btnname:"ISO Readiness Cal"
+        btnname:"ISO Readiness Cal",
+         link:"/iscs"
     }
 ]
 export const homeservicecard3=[
@@ -34,7 +36,8 @@ export const homeservicecard3=[
             "Outdoor/experiential offsites",
             
         ],
-        btnname:" Training Catalogue"
+        btnname:" Training Catalogue",
+         link:"/etd"
     }
 ]
 export const homeservicecard4=[
@@ -47,6 +50,7 @@ export const homeservicecard4=[
             "ISO 18788 alignment; mass-event support",
             
         ],
-        btnname:"Security Review"
+        btnname:"Security Review",
+         link:"/psis"
     }
 ]
