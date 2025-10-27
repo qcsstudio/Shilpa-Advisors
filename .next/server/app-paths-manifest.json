@@ -1,7 +1,24 @@
 {
-  "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
-  "/(defaultLayout)/hrms/page": "app/(defaultLayout)/hrms/page.js",
-  "/(defaultLayout)/iscs/page": "app/(defaultLayout)/iscs/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/blog/[slug]/route": "app/api/blog/[slug]/route.js",
+  "/api/blog/route": "app/api/blog/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/login/page": "app/login/page.js",
+  "/(defaultLayout)/blog-sidebar/page": "app/(defaultLayout)/blog-sidebar/page.js",
+  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js",
+  "/(defaultLayout)/blog/blog-details/page": "app/(defaultLayout)/blog/blog-details/page.js",
+  "/(defaultLayout)/blog/page": "app/(defaultLayout)/blog/page.js",
   "/(defaultLayout)/casestudies/page": "app/(defaultLayout)/casestudies/page.js",
-  "/(defaultLayout)/about/page": "app/(defaultLayout)/about/page.js"
+  "/(defaultLayout)/contact/page": "app/(defaultLayout)/contact/page.js",
+  "/(defaultLayout)/iscs/page": "app/(defaultLayout)/iscs/page.js",
+  "/(defaultLayout)/psis/page": "app/(defaultLayout)/psis/page.js",
+  "/(defaultLayout)/etd/page": "app/(defaultLayout)/etd/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/(defaultLayout)/hrms/page": "app/(defaultLayout)/hrms/page.js",
+  "/(defaultLayout)/faq/page": "app/(defaultLayout)/faq/page.js",
+  "/(defaultLayout)/page": "app/(defaultLayout)/page.js",
+  "/(defaultLayout)/pricing/page": "app/(defaultLayout)/pricing/page.js",
+  "/(defaultLayout)/team/page": "app/(defaultLayout)/team/page.js"
 }

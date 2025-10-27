@@ -1,3 +1,5 @@
+'use client'
+import { handleuseCalendly } from '@/app/Components/CalendlyBadge/CalendlyBadge'
 import BreadCumb from '@/app/Components/Common/BreadCumb'
 import SectionTitle from '@/app/Components/Common/SectionTitle'
 import Faq from '@/app/Components/Faq/Faq'
@@ -12,6 +14,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
+        const calendlyAction = handleuseCalendly()
     return (
         <>
             <BreadCumb
@@ -19,8 +22,8 @@ const page = () => {
                 subTitle="Services"
                 title="Practical Training that Changes On-the-Job Behaviour"
                 content=" From leadership & supervisory skills to ISO awareness/internal auditor, OHS (45001), and team building via OBT at Kitulgala—programs built for Sri Lankan SMEs, delivered in EN/SI/TA, and measured for impact."
-                button1="View Training Catalogue"
-                button2="Book a Training Needs Call"
+                buttons={{ btn1: { label: "View Training Catalogue ", link: "#" }, btn2: { label: "Book a Training Needs Call", link: calendlyAction } }}
+
             />
             <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
@@ -53,19 +56,19 @@ const page = () => {
                                 </div>
                             </div>
                         </div>
-                           <Hrms data={Outcomes} heading="Outcomes You Can Measure" />
+                        <Hrms data={Outcomes} heading="Outcomes You Can Measure" />
                     </div>
                 </div>
             </div>
-             <Feature2 data={Agendas} heading="Agendas "/>
-              <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
+            <Feature2 data={Agendas} heading="Agendas " />
+            <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
                     <div className="row align-items-center ">
-                           <Hrms data={DeliveryOptions} heading="Delivery Options & Logistics" />
+                        <Hrms data={DeliveryOptions} heading="Delivery Options & Logistics" />
 
                     </div>
-                    </div>
-                    </div>
+                </div>
+            </div>
             <Faq leftdata={service_Faq3_1} rightdata={service_Faq3_2} />
         </>
     )

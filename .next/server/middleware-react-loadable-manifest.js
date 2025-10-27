@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST='{"app\\\\Components\\\\JoditEditor\\\\JoditEditor.jsx -> jodit-react":{"id":6858,"files":["static/chunks/f31aec94.0a44f30be45f4e9b.js"]}}';
