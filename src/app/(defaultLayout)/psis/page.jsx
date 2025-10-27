@@ -1,4 +1,6 @@
+'use client'
 import Acheive from '@/app/Components/About/Acheive'
+import { handleuseCalendly } from '@/app/Components/CalendlyBadge/CalendlyBadge'
 import BreadCumb from '@/app/Components/Common/BreadCumb'
 import Cta from '@/app/Components/Cta/Cta'
 import Faq from '@/app/Components/Faq/Faq'
@@ -9,7 +11,7 @@ import Services2 from '@/app/Components/Services/Services2'
 import { service_Faq4_1, service_Faq4_2 } from '@/app/Data/questions'
 import { scenarios, service4scenarios } from '@/app/Data/service/scenerios'
 import { service4 } from '@/app/Data/service/service1'
-import { howitwork, howWework } from '@/app/Data/services2'
+import { howitwork, } from '@/app/Data/services2'
 import React from 'react'
 
 const page = () => {
@@ -26,6 +28,7 @@ const page = () => {
         btnurl: '/service',
         mainImg: '/assets/images/resource/servc-thumb.png'
     }
+     const calendlyAction = handleuseCalendly()
     return (
         <>
             <BreadCumb
@@ -35,6 +38,8 @@ const page = () => {
                 content=" We help Sri Lankan SMEs build guard-force SOPs, run training & drills, standardise incident reporting, and align with buyer programs (CSR/CTPAT-style requirements)—without slowing day-to-day operations."
                 button1="Book a Security Compliance Review"
                 button2="Get the Guard SOP Starter Pack (Free)"
+                buttons={{ btn1: { label: "Book a Security Compliance Review ", link: "#" }, btn2: { label: "Get the Guard SOP Starter Pack (Free)", link: calendlyAction } }}
+
             />
             <div className="about-section style-three relative" data-background="/assets/images/resource/about-bg3.jpg">
                 <div className="container">
