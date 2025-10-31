@@ -1,0 +1,23 @@
+[
+  {
+    "image": "/assets/images/resource/testi.png",
+    "subTitle": "CFO, Colombo SME",
+    "title": "Sonia Sara",
+    "desc": "Payroll prep went from two days to two hours. EPF/ETF rejections? Zero last quarter.” ",
+    "icon": "/assets/images/resource/cmp-logo2.png"
+  },
+  {
+    "image": "/assets/images/resource/testi2.png",
+    "subTitle": "Director, Services SME",
+    "title": "John Alexon",
+    "desc": "They took us from gap to ISO 9001 without chaos. Documentation and audits were crystal-clear.",
+    "icon": "/assets/images/resource/cmp-logo.png"
+  },
+  {
+    "image": "/assets/images/resource/testi3.png",
+    "subTitle": "HR Lead, Retail SME",
+    "title": "D. Morgan",
+    "desc": "OBT at Kitulgala changed our supervisors—communication and ownership jumped.",
+    "icon": "/assets/images/resource/cmp-logo.png"
+  }
+]

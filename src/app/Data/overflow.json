@@ -1,0 +1,46 @@
+[
+    {
+        "number": 1,
+        "title": "Log ingest",
+        "content":
+            "Sync biometric device logs and web/CSV entries into a clean attendance register. Auto-flag missing punches, duplicate swipes, and out-of-shift hours so approvers can fix issues before they ripple into payroll."
+    },
+    {
+        "number": 2,
+        "title": "Exceptions & OT",
+        "content":
+            "Route exceptions and overtime for approval with SLAs. Once cleared, the system recalculates late arrivals, OT slabs, half-days, and no-pay rules, updating every affected register and audit trail in real time."
+    },
+    {
+        "number": 3,
+        "title": "Leave approvals",
+        "content":
+            " Apply approved leave to balances and calendars instantly. Accruals, proration, carry-forward and encashment rules are enforced, preventing shift conflicts and ensuring accurate eligibility when payroll is processed."
+    },
+    {
+        "number": 4,
+        "title": "Pre-payroll checks",
+        "content":
+            " Validate pending approvals, earnings and deductions, loans/advances, and roster anomalies. Variance views surface outliers by employee, department, or site so finance can confirm numbers before processing."
+    },
+    {
+        "number": 5,
+        "title": "Payroll run",
+        "content":
+            "Execute payroll with EPF/ETF/APIT and stamp duty applied. Generate bilingual payslips, bank payment files, and GL exports in one pass, with versioned packs for reviewers and a complete change log for auditors."
+    },
+    {
+        "number": 6,
+        "title": "Statutory & reports",
+        "content":
+            "Assemble statutory returns and reports—C1, R1, R4; EPF/ETF half-year submissions; APIT schedules T9, T10, T6. Reconciliation sheets and control reports package everything required for filing and audits."
+    },
+    {
+        "number": 7,
+        "title": "Month-end lock",
+        "content":
+            "Lock the period to preserve integrity. Freezing registers and figures keeps approvals, exports, and documents consistent; any late changes route through controlled adjustments with full audit trails."
+    }
+
+    
+]
