@@ -18,7 +18,7 @@
     "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.1",
-    "next": "14.2.14",
+    "next": "14.2.35",
     "primeicons": "^7.0.0",
     "primereact": "^10.9.7",
     "react": "^18",
